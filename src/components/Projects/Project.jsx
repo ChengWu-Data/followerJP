@@ -8,8 +8,9 @@ import {
   StyledProjectContentBorder,
 } from '../../styles/Projects/ProjectContent/StyledProjectContent';
 import { StyledProjectDescriptionContainer } from '../../styles/Projects/ProjectContent/StyledProjectDescriptionContainer';
-import GithubSVG from '/src/assets/icons/github.svg';
-import ExternalLinkSVG from '/src/assets/icons/external-link.svg';
+import { ReactComponent as GithubSVG } from '/src/assets/icons/github.svg';
+import { ReactComponent as ExternalLinkSVG } from '/src/assets/icons/external-link.svg';
+
 import {
   projectSlideLeftVariants,
   projectSlideRightVariants,

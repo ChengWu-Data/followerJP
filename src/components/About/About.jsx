@@ -73,7 +73,7 @@ const About = () => {
           viewport={{ once: true }}
           variants={redTempleVariants}
         >
-          <RedTempleSVG />
+          <RedTempleWinterSVG />
         </StyledRedTempleContainer>
       </StyledAboutSection>
     </>
@@ -81,3 +81,4 @@ const About = () => {
 };
 
 export default About;
+

@@ -1,15 +1,16 @@
-import TreeBranchSVG from '/src/assets/images/illustrations/blossom-branch-v2OG.svg';
-import DarkTreeBranchSVG from '/src/assets/images/illustrations/blossom-branch-v2-dark.svg';
-import SunSVG from '/src/assets/images/illustrations/rising-sun.svg';
-import MoonSVG from '/src/assets/images/illustrations/rising-moonV2.svg';
-import FujiSVG from '/src/assets/images/illustrations/mount-fuji-hokusai-near-ejiri-noBg-sakura02Mini.svg';
-import DarkFujiSVG from '/src/assets/images/illustrations/fuji-hokusai-dark-themeV2.svg';
-import CloudSVG from '/src/assets/images/illustrations/kumo-grayV2.svg';
+import { ReactComponent as TreeBranchSVG } from '/src/assets/images/illustrations/blossom-branch-v2OG.svg';
+import { ReactComponent as DarkTreeBranchSVG } from '/src/assets/images/illustrations/blossom-branch-v2-dark.svg';
+import { ReactComponent as SunSVG } from '/src/assets/images/illustrations/rising-sun.svg';
+import { ReactComponent as MoonSVG } from '/src/assets/images/illustrations/rising-moonV2.svg';
+import { ReactComponent as FujiSVG } from '/src/assets/images/illustrations/mount-fuji-hokusai-near-ejiri-noBg-sakura02Mini.svg';
+import { ReactComponent as DarkFujiSVG } from '/src/assets/images/illustrations/fuji-hokusai-dark-themeV2.svg';
+import { ReactComponent as CloudSVG } from '/src/assets/images/illustrations/kumo-grayV2.svg';
 
-import LightLanternSVG from '/src/assets/images/illustrations/chouchinV3-light.svg';
-import DarkLanternSVG from '/src/assets/images/illustrations/chouchinV3-dark.svg';
-import DarkModeSVG from '/src/assets/icons/moon.svg';
-import LightModeSVG from '/src/assets/icons/sun.svg';
+import { ReactComponent as LightLanternSVG } from '/src/assets/images/illustrations/chouchinV3-light.svg';
+import { ReactComponent as DarkLanternSVG } from '/src/assets/images/illustrations/chouchinV3-dark.svg';
+import { ReactComponent as DarkModeSVG } from '/src/assets/icons/moon.svg';
+import { ReactComponent as LightModeSVG } from '/src/assets/icons/sun.svg';
+
 import { StyledHeroBgClouds } from '../../styles/Hero/HeroBackground/StyledHeroBgClouds';
 import { StyledFujiContainer } from '../../styles/Hero/HeroBackground/StyledFujiContainer';
 import { StyledSunContainer } from '../../styles/Hero/HeroBackground/StyledSunContainer';

@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
-  // 👇 这一行非常重要，告诉 Vite 生成的静态资源要加上 /cheng-Ikebana/ 前缀
+  // 这一行设置了静态资源的基本路径
   base: '/cheng-Ikebana/',
   plugins: [
     react({
@@ -15,7 +15,7 @@ export default defineConfig({
       svgrOptions: {
         icon: true,
       },
-      exportAsDefault: true,
+      // 已移除 exportAsDefault: true 以便使用默认的命名导出 ReactComponent
     }),
   ],
 });

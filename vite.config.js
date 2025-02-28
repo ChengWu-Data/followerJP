@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
+  // 👇 这一行非常重要，告诉 Vite 生成的静态资源要加上 /cheng-Ikebana/ 前缀
+  base: '/cheng-Ikebana/',
   plugins: [
     react({
       babel: {
@@ -11,9 +13,9 @@ export default defineConfig({
     }),
     svgr({
       svgrOptions: {
-        icon: true, // 启用 SVG 图标优化
+        icon: true,
       },
-      exportAsDefault: true, // 默认导出 SVG
+      exportAsDefault: true,
     }),
   ],
 });

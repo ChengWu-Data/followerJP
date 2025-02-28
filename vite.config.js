@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
-// 判断当前是否是生产环境
 const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
@@ -18,7 +17,8 @@ export default defineConfig({
       svgrOptions: {
         icon: true,
       },
-      // 不再使用 exportAsDefault: true
+      // 明确设置为 false，确保以命名导出方式提供 ReactComponent
+      exportAsDefault: false,
     }),
   ],
 });

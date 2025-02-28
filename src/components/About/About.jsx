@@ -1,4 +1,4 @@
-import RedTempleSVG from '/src/assets/images/illustrations/red-temple-winter.svg';
+import { ReactComponent as RedTempleWinterSVG } from '/src/assets/images/illustrations/red-temple-winter.svg';
 import { StyledRedTempleContainer } from '../../styles/About/AboutBackground/StyledRedTempleContainer';
 import { StyledAboutSection } from '../../styles/About/AboutLayout/StyledAboutLayout';
 import { StyledAboutTextContainer } from '../../styles/About/AboutText/StyledAboutTextContainer';

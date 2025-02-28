@@ -9,7 +9,7 @@ import {
   childHeroTextVariants,
   parentHeroTextVariants,
 } from '../../utils/animations';
-import GlobeSVG from '/src/assets/icons/globe.svg';
+import { ReactComponent as GlobeSVG } from '/src/assets/icons/globe.svg';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';

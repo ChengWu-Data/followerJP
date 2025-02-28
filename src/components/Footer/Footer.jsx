@@ -13,13 +13,13 @@ import { StyledPlantContainer } from '../../styles/Footer/FooterSVGs/StyledPlant
 import { StyledSeaweedContainer } from '../../styles/Footer/FooterSVGs/StyledSeaweedContainer';
 import { StyledSeaweed2Container } from '../../styles/Footer/FooterSVGs/StyledSeawead2Container';
 import { StyledBoulderContainer } from '../../styles/Footer/FooterSVGs/StyledBoulderContainer';
-import FooterSVG from '/src/assets/images/illustrations/footer-background-silhouette-mountOG.svg';
-import Koi1SVG from '/src/assets/images/illustrations/koi1V2.svg';
-import Koi2SVG from '/src/assets/images/illustrations/koi2V2.svg';
-import BoulderSVG from '/src/assets/images/illustrations/boulderV2.svg';
-import SeaweedSVG from '/src/assets/images/illustrations/seaweed.svg';
-import Seaweed2SVG from '/src/assets/images/illustrations/seaweed2.svg';
-import PlantSVG from '/src/assets/images/illustrations/underwater-plantV2.svg';
+import { ReactComponent as FooterSVG } from '/src/assets/images/illustrations/footer-background-silhouette-mountOG.svg';
+import { ReactComponent as Koi1SVG } from '/src/assets/images/illustrations/koi1V2.svg';
+import { ReactComponent as Koi2SVG } from '/src/assets/images/illustrations/koi2V2.svg';
+import { ReactComponent as BoulderSVG } from '/src/assets/images/illustrations/boulderV2.svg';
+import { ReactComponent as SeaweedSVG } from '/src/assets/images/illustrations/seaweed.svg';
+import { ReactComponent as Seaweed2SVG } from '/src/assets/images/illustrations/seaweed2.svg';
+import { ReactComponent as PlantSVG } from '/src/assets/images/illustrations/underwater-plantV2.svg';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 

@@ -2,9 +2,12 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
+// 判断当前是否是生产环境
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default defineConfig({
-  // 这一行设置了静态资源的基本路径
-  base: '/cheng-Ikebana/',
+  // 如果是生产环境，就使用 '/cheng-Ikebana/'，否则用 '/'
+  base: isProduction ? '/cheng-Ikebana/' : '/',
   plugins: [
     react({
       babel: {
@@ -15,7 +18,7 @@ export default defineConfig({
       svgrOptions: {
         icon: true,
       },
-      // 已移除 exportAsDefault: true 以便使用默认的命名导出 ReactComponent
+      // 不再使用 exportAsDefault: true
     }),
   ],
 });

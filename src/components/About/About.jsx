@@ -21,7 +21,7 @@ const About = () => {
     <>
       <StyledAboutSection pageTheme={theme}>
         <StyledSectionHeading>
-          <h2 id='about'> about ikebana</h2>
+          <h2 id="about">Arrangements</h2>
         </StyledSectionHeading>
 
         <StyledPictureContainer

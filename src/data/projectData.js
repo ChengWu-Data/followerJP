@@ -4,8 +4,8 @@ export const projectData = [
     title: 'Emerging Bliss',
     description: 
     "This arrangement captures the quiet but powerful growth of joy. White carnations serve as a serene focal point, while yellow statice adds texture and depth. The ruscus leaves' upward curve creates a flowing movement, reinforcing the idea that happiness expands naturally, yet remains grounded in simplicity and harmony.",
-    imageUrl: '/rasters/1.webp',
-    mobileUrl: '/rasters/1.webp',
+    imageUrl: 'rasters/1.webp',
+    mobileUrl: 'rasters/1.webp',
   },
   {
     id: crypto.randomUUID(),

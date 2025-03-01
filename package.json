@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://chengwu-data.github.io/followerJP/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^9.0.2",
@@ -21,6 +24,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "babel-plugin-styled-components": "^2.0.7",
     "prettier": "^2.8.4",
-    "vite": "^4.1.0"
+    "vite": "^4.1.0",
+    "gh-pages": "^5.0.0"
   }
 }
+

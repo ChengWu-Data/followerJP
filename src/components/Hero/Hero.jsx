@@ -9,31 +9,12 @@ import {
   childHeroTextVariants,
   parentHeroTextVariants,
 } from '../../utils/animations';
-import { ReactComponent as GlobeSVG } from '/src/assets/icons/globe.svg';
 import { motion, useReducedMotion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
-import { useState } from 'react';
-import { StyledLanguageButton } from '../../styles/Hero/HeroText/StyledLanguageButton';
-import i18n from '../../i18n';
 import { useGlobalContext } from '../../Context/Context';
 
 const Hero = () => {
-  const [language, setLanguage] = useState('en');
-  const { t } = useTranslation();
-  const lang = i18n.resolvedLanguage;
   const { theme } = useGlobalContext();
   const shouldReduceMotion = useReducedMotion();
-
-  const toggleLanguageHandler = () => {
-    if (lang === 'en') {
-      i18next.changeLanguage('ja');
-      setLanguage('ja');
-    } else {
-      i18next.changeLanguage('en');
-      setLanguage('en');
-    }
-  };
 
   return (
     <>
@@ -41,29 +22,23 @@ const Hero = () => {
         <StyledHeroSection>
           <HeroBackground />
           <StyledHeroContainer>
-            {/* This motion.div is necessary for a smooth transition between language button clicks */}
-            <motion.div
-              key={lang} // add a key prop with the language value
-            >
+            <motion.div>
               <StyledTextBox
                 pageTheme={theme}
-                lang={lang}
                 initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
                 animate='visible'
                 variants={parentHeroTextVariants}
               >
                 <motion.div variants={childHeroTextVariants}>
                   <h1>
-                    {t('greetings')} <span lang={lang}>{t('name')}</span>
-                    <span>{t('name-end')}</span>
+                    Welcome! <span>Cheng Wu</span>
                   </h1>
                 </motion.div>
-
                 <motion.div variants={childHeroTextVariants}>
-                  <h2> {t('sub-heading')}</h2>
+                  <h2>Data-driven creativity and innovation</h2>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
-                  <p>{t('more-info')}</p>
+                  <p>Exploring the intersection of technology, design, and storytelling.</p>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
                   <motion.a
@@ -71,14 +46,12 @@ const Hero = () => {
                     whileTap={
                       shouldReduceMotion ? { scale: 1 } : { scale: 0.97 }
                     }
-                    href='/Nick-Mullenmeister-Resume.pdf'
+                    href='/Resume.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    {t('resume-btn')}
+                    View Resume
                   </motion.a>
-
-                  
                 </motion.div>
               </StyledTextBox>
             </motion.div>

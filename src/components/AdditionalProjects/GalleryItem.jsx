@@ -9,13 +9,9 @@ import { StyledOpenCardDescription } from '../../styles/AdditionalProjects/Expan
 import { StyledOpenContainer } from '../../styles/AdditionalProjects/ExpandedProjectCard/StyledOpenContainer';
 import { StyledOpenTitleContainer } from '../../styles/AdditionalProjects/ExpandedProjectCard/StyledOpenTitleContainer';
 import { childProjectVariants } from '../../utils/animations';
-import { useState } from 'react';
-import { useRef } from 'react';
-import { Fragment } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useState, useRef, Fragment } from 'react';
 
 const GalleryItem = ({ project, description }) => {
-  const { t } = useTranslation();
   const [isCardOpened, setIsCardOpened] = useState(false);
   const [cardDimensions, setCardDimensions] = useState({ width: 0, height: 0 });
   const card = useRef(null);
@@ -33,7 +29,6 @@ const GalleryItem = ({ project, description }) => {
       <StyledGalleryCard
         key={crypto.randomUUID()}
         variants={childProjectVariants}
-        ///////////
         ref={card}
         isCardOpened={isCardOpened}
         layout
@@ -52,7 +47,7 @@ const GalleryItem = ({ project, description }) => {
               }
             }}
           >
-            {t('learn-more')}
+            Learn More
             <ExpandSVG />
           </button>
         </StyledCardHeader>
@@ -93,7 +88,6 @@ const GalleryItem = ({ project, description }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
             >
-              {/* <p>{project.description}</p> */}
               <p>{description}</p>
               <ul>
                 {project.technologies.map(tech => {

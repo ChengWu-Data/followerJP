@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledSectionHeading } from "../../styles/UI/StyledSectionHeading.jsx";
+import { StyledSectionHeading } from "/src/styles/UI/StyledSectionHeading";
 
 const ReflectionsContainer = styled.section`
   max-width: 800px;

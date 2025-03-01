@@ -33,7 +33,7 @@ const About = () => {
           <StyledPictureCollage>
             <StyledLandscapeContainer>
               <picture>
-                <source type='image/webp' srcSet='/rasters/n02.webp' />
+                <source type='image/webp' srcSet='/rasters/flower2.webp' />
                 <img
                   src='/rasters/n02.webp'
                   alt='kawase-toshiro1'
@@ -42,7 +42,7 @@ const About = () => {
             </StyledLandscapeContainer>
             <StyledPortraitContainer>
               <picture>
-                <source type='image/webp' srcSet='/rasters/n01.webp' />
+                <source type='image/webp' srcSet='/rasters/flower1.webp' />
                 <img
                   src='/rasters/n01.webp'
                   alt='kawase-toshiro2'

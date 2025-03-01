@@ -1,9 +1,8 @@
-import i18n from '../../i18n';
 import { menuItemVariants } from '../../utils/animations';
 import { StyledMenuItem } from '../../styles/Navigation/NavigationMenu/StyledMenuItem';
 
 export const MenuItem = ({ sectionTitle, sectionHref, toggle }) => {
-  const lang = i18n.resolvedLanguage;
+  const lang = 'en'; 
   return (
     <>
       <StyledMenuItem

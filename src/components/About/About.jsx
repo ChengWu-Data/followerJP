@@ -1,5 +1,3 @@
-import { ReactComponent as RedTempleWinterSVG } from '/src/assets/images/illustrations/red-temple-winter.svg';
-import { StyledRedTempleContainer } from '../../styles/About/AboutBackground/StyledRedTempleContainer';
 import { StyledAboutSection } from '../../styles/About/AboutLayout/StyledAboutLayout';
 import { StyledAboutTextContainer } from '../../styles/About/AboutText/StyledAboutTextContainer';
 import {
@@ -10,7 +8,6 @@ import {
 } from '../../styles/About/AboutPictures/StyledAboutPictures';
 import {
   picturesTextVariants,
-  redTempleVariants,
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
 import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading';
@@ -68,17 +65,6 @@ const About = () => {
             I find inspiration in the subtle interplay of nature, space, and movement, crafting designs that reflect balance and harmony.
           </p>
         </StyledAboutTextContainer>
-
-        {false && (
-          <StyledRedTempleContainer
-            initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-            whileInView='visible'
-            viewport={{ once: true }}
-            variants={redTempleVariants}
-          >
-            <RedTempleWinterSVG />
-          </StyledRedTempleContainer>
-        )}
       </StyledAboutSection>
     </>
   );

@@ -26,7 +26,7 @@ const Hero = () => {
               <StyledTextBox
                 pageTheme={theme}
                 initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-                animate='visible'
+                animate="visible"
                 variants={parentHeroTextVariants}
               >
                 <motion.div variants={childHeroTextVariants}>
@@ -35,20 +35,18 @@ const Hero = () => {
                   </h1>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
-                  <h2>Data-driven creativity and innovation</h2>
+                  <h2>Innovating with data and creativity</h2>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
-                  <p>Exploring the intersection of technology, design, and storytelling.</p>
+                  <p>Bridging technology, design, and storytelling to create meaningful experiences.</p>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
                   <motion.a
                     pageTheme={theme}
-                    whileTap={
-                      shouldReduceMotion ? { scale: 1 } : { scale: 0.97 }
-                    }
-                    href='/Resume.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    whileTap={shouldReduceMotion ? { scale: 1 } : { scale: 0.97 }}
+                    href="/Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Resume
                   </motion.a>
@@ -63,4 +61,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

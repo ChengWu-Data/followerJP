@@ -19,27 +19,25 @@ const ProjectGallery = () => {
             <StyledProjectGallery
               key={crypto.randomUUID()}
               initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-              animate='visible'
+              animate="visible"
               variants={parentProjectVariants}
-              exit='exit'
+              exit="exit"
             >
               {projectData
                 .slice(CONSTANTS.FEATURED_PROJECT_CUTOFF)
-                .map((project, index) => {
-                  return (
-                    <GalleryItem
-                      key={project.id}
-                      project={project}
-                      description={project.description} // ✅ Directly using project description
-                    />
-                  );
-                })}
+                .map((project) => (
+                  <GalleryItem
+                    key={project.id}
+                    project={project}
+                    description={project.description} // ✅ Directly using project description
+                  />
+                ))}
               <StyledProjectButton
                 variants={buttonVariant}
                 initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-                animate='visible'
+                animate="visible"
                 exit={shouldReduceMotion ? 'noMotion' : 'exit'}
-                onClick={() => toggleMoreProjects()}
+                onClick={toggleMoreProjects}
               >
                 Show Less
               </StyledProjectButton>

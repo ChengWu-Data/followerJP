@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // ✅ 添加路由
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // ✅ 用 HashRouter 代替 BrowserRouter
 import { base, lightTheme, darkTheme } from "./themes/themes";
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";

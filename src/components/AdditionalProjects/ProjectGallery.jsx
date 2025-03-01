@@ -6,12 +6,11 @@ import { StyledProjectGallery } from '../../styles/AdditionalProjects/Additional
 import GalleryItem from './GalleryItem';
 import { buttonVariant, parentProjectVariants } from '../../utils/animations';
 import { CONSTANTS } from '../../constants';
-import { useTranslation } from 'react-i18next';
 
 const ProjectGallery = () => {
-  const { t } = useTranslation();
   const shouldReduceMotion = useReducedMotion();
   const { showMoreProjects, toggleMoreProjects } = useGlobalContext();
+
   return (
     <>
       <AnimatePresence>
@@ -31,12 +30,7 @@ const ProjectGallery = () => {
                     <GalleryItem
                       key={project.id}
                       project={project}
-                      // Mapping over these translated descriptions the same as in the Projects section, but this time add the cutoff (4) to the index, so that the mapping for the additional projects begins at the 5th project in the list.
-                      description={t(
-                        `projects.${
-                          index + CONSTANTS.FEATURED_PROJECT_CUTOFF
-                        }.description`
-                      )}
+                      description={project.description} // ✅ Directly using project description
                     />
                   );
                 })}
@@ -47,7 +41,7 @@ const ProjectGallery = () => {
                 exit={shouldReduceMotion ? 'noMotion' : 'exit'}
                 onClick={() => toggleMoreProjects()}
               >
-                {t('show-less-btn')}
+                Show Less
               </StyledProjectButton>
             </StyledProjectGallery>
           </>

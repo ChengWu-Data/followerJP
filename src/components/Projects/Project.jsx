@@ -23,27 +23,17 @@ const Project = ({ project, description, alternate }) => {
   return (
     <StyledProjectItem
       initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-      whileInView='visible'
+      whileInView="visible"
       viewport={{ once: true, amount: 0.4 }}
-      variants={
-        !alternate ? projectSlideLeftVariants : projectSlideRightVariants
-      }
+      variants={!alternate ? projectSlideLeftVariants : projectSlideRightVariants}
       alternate={alternate}
     >
       <StyledProjectImage pageTheme={theme} alternate={alternate}>
         <StyledProjectImageContainer>
           <picture>
-            <source
-              srcSet={project.imageUrl}
-              type='image/webp'
-              media='(min-width: 768px)'
-            />
-            <source
-              srcSet={project.mobileUrl}
-              type='image/webp'
-              media='(max-width: 768px)'
-            />
-            <img src={project.imageUrl} alt={project.description} />
+            <source srcSet={project.imageUrl} type="image/webp" media="(min-width: 768px)" />
+            <source srcSet={project.mobileUrl} type="image/webp" media="(max-width: 768px)" />
+            <img src={project.imageUrl} alt={project.title} />
           </picture>
         </StyledProjectImageContainer>
       </StyledProjectImage>
@@ -56,4 +46,9 @@ const Project = ({ project, description, alternate }) => {
             <p>{description}</p>
           </StyledProjectDescriptionContainer>
         </StyledProjectContentBorder>
-      </StyledProjectConten
+      </StyledProjectContent>
+    </StyledProjectItem>
+  );
+};
+
+export default Project;

@@ -14,11 +14,9 @@ import {
   projectSlideRightVariants,
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import { useGlobalContext } from '../../Context/Context';
 
 const Project = ({ project, description, alternate }) => {
-  const { t } = useTranslation();
   const { theme } = useGlobalContext();
   const shouldReduceMotion = useReducedMotion();
 
@@ -52,15 +50,10 @@ const Project = ({ project, description, alternate }) => {
 
       <StyledProjectContent alternate={alternate}>
         <StyledProjectContentBorder alternate={alternate}>
-          <span>{t('featured-tag')}</span>
+          <span>Featured</span>
           <h3>{project.title}</h3>
           <StyledProjectDescriptionContainer>
             <p>{description}</p>
           </StyledProjectDescriptionContainer>
         </StyledProjectContentBorder>
-      </StyledProjectContent>
-    </StyledProjectItem>
-  );
-};
-
-export default Project;
+      </StyledProjectConten

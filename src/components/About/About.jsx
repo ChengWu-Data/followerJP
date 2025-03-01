@@ -21,7 +21,7 @@ const About = () => {
     <>
       <StyledAboutSection pageTheme={theme}>
         <StyledSectionHeading>
-          <h2 id='about'> About Me</h2>
+          <h2 id='about'> about ikebana</h2>
         </StyledSectionHeading>
 
         <StyledPictureContainer
@@ -59,10 +59,10 @@ const About = () => {
           variants={picturesTextVariants}
         >
           <p>
-            Welcome to my portfolio! My work blends creativity and precision, capturing the essence of artistic vision through thoughtful compositions.
+            Ikebana (生け花) is the Japanese art of flower arrangement, but it is more than just placing flowers in a vase. It is a practice of balance, movement, and emotion. Unlike Western floral design, Ikebana embraces asymmetry, negative space (Ma, 間), and simplicity, allowing each element to breathe.
           </p>
           <p>
-            I find inspiration in the subtle interplay of nature, space, and movement, crafting designs that reflect balance and harmony.
+            At its core, Ikebana is about Kokoro (心)—the heart and spirit of the arranger. Every branch, stem, and empty space is placed with intention, creating a quiet dialogue between nature and the artist. Over centuries, it has evolved from temple offerings to structured forms like Rikka (立花) and Shōka (生花), and now into modern Jiyuka (自由花), where creativity takes precedence. More than an art form, Ikebana is a meditation—a fleeting moment of beauty, a reflection of nature’s impermanence, and a space for quiet expression.
           </p>
         </StyledAboutTextContainer>
       </StyledAboutSection>

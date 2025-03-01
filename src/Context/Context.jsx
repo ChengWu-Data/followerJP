@@ -1,9 +1,5 @@
-import { useContext } from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { createContext } from 'react';
+import { useContext, useEffect, useState, createContext } from 'react';
 import { CONSTANTS } from '../constants';
-import { useTranslation } from 'react-i18next';
 
 const AppContext = createContext();
 
@@ -23,10 +19,10 @@ export const AppProvider = ({ children }) => {
       return '';
     }
   });
+
   const toggleMoreProjects = () => {
     setShowMoreProjects(!showMoreProjects);
   };
-  const { t } = useTranslation();
 
   // For handling whether the user has scrolled to bottom of page - changes sidebar color
   const handleScroll = () => {
@@ -50,11 +46,6 @@ export const AppProvider = ({ children }) => {
     };
   }, []);
 
-  // Changes the document title based on the language selected
-  useEffect(() => {
-    document.title = t('app-title');
-  }, [t]);
-
   // Light/Dark theme toggler
   const toggleTheme = () => {
     theme === 'dark'
@@ -76,6 +67,7 @@ export const AppProvider = ({ children }) => {
       setUserTheme('dark');
     }
   }, []);
+
   useEffect(() => {
     const prefersLightMode = window.matchMedia(
       '(prefers-color-scheme: light)'
@@ -103,3 +95,4 @@ export const AppProvider = ({ children }) => {
 export const useGlobalContext = () => {
   return useContext(AppContext);
 };
+

@@ -103,7 +103,7 @@ const Reflections = () => {
       </p>
 
       <p>
-        In addition to the technical aspects of Ikebana, I learned about  <HighlightedText>kokoro<HighlightedText>, the concept of heart or spirit. Throughout the class, I began to 
+        In addition to the technical aspects of Ikebana, I learned about  <HighlightedText>kokoro</HighlightedText>, the concept of heart or spirit. Throughout the class, I began to 
         realize that Ikebana is more than just arranging flowers; it is about creating with intention, allowing your emotions and state of mind to guide the process. For example, my arrangement 
         titled "Joy" was directly inspired by my feelings of happiness and optimism at the time. The bright yellow billy balls and cheerful carnations mirrored the lightness and warmth 
         I felt inside. In contrast, my arrangement “Echoes of Stillness” focused on creating a quiet, reflective mood with more muted tones and a gentle flow. These pieces allowed me to
@@ -111,8 +111,8 @@ const Reflections = () => {
       </p>
           
       <p>   
-        Reflecting on how these lessons can be applied to my own life, I recognize the influence that Ikebana has had beyond the art form itself. The concept of <HighlightedText>balance<HighlightedText> 
-        the importance of <HighlightedText>negative space<HighlightedText>, and the understanding of kokoro have reshaped how I approach both my work and my personal life. For example, in my academic work, 
+        Reflecting on how these lessons can be applied to my own life, I recognize the influence that Ikebana has had beyond the art form itself. The concept of <HighlightedText>balance</HighlightedText> 
+        the importance of <HighlightedText>negative space</HighlightedText>, and the understanding of kokoro have reshaped how I approach both my work and my personal life. For example, in my academic work, 
         I’ve started to embrace the idea of Ma—allowing myself time to reflect and breathe rather than constantly pushing forward. In my relationships, I have learned the importance of balance and 
         understanding the space between people, allowing for healthy distance and connection.
       </p>

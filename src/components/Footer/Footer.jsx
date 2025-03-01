@@ -23,13 +23,7 @@ import seaweedImage from '../../assets/images/illustrations/seaweed.svg';
 import seaweed2Image from '../../assets/images/illustrations/seaweed2.svg';
 import plantImage from '../../assets/images/illustrations/underwater-plantV2.svg';
 
-import { useTranslation } from 'react-i18next';
-import i18n from '../../i18n';
-
 const Footer = () => {
-  const { t } = useTranslation();
-  const lang = i18n.resolvedLanguage;
-
   return (
     <StyledFooter>
       <StyledFooterBackground>
@@ -61,17 +55,16 @@ const Footer = () => {
               style={{ width: '10rem', height: 'auto' }}
             />
           </StyledKoi2Container>
-          <StyledBoulderContainer lang={lang}>
+          <StyledBoulderContainer>
             <img
               src={boulderImage}
               alt="Boulder"
               style={{ width: '12rem', height: 'auto' }}
             />
           </StyledBoulderContainer>
-          <StyledContactInfo lang={lang}>
-            <li> Contact: datajourney.chengw@gmail.com </li>
-            <li> Welcome to my portfolio site! </li>
-
+          <StyledContactInfo>
+            <li>Contact: datajourney.chengw@gmail.com</li>
+            <li>Welcome to my portfolio site!</li>
           </StyledContactInfo>
         </StyledContactInfoContainer>
         <StyledPlantContainer>

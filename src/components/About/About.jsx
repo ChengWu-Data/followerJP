@@ -14,20 +14,17 @@ import {
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
 import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading';
-import { useTranslation } from 'react-i18next';
-import i18n from '../../i18n';
 import { useGlobalContext } from '../../Context/Context';
 
 const About = () => {
-  const { t } = useTranslation();
-  const lang = i18n.resolvedLanguage;
   const { theme } = useGlobalContext();
   const shouldReduceMotion = useReducedMotion();
+  
   return (
     <>
       <StyledAboutSection pageTheme={theme}>
-        <StyledSectionHeading lang={lang}>
-          <h2 id='about'> {t('about-heading')}</h2>
+        <StyledSectionHeading>
+          <h2 id='about'> About Me</h2>
         </StyledSectionHeading>
 
         <StyledPictureContainer
@@ -64,26 +61,27 @@ const About = () => {
           viewport={{ once: true }}
           variants={picturesTextVariants}
         >
-          <p>{t('about-text-top')}</p>
-          <p>{t('about-text-bottom')}</p>
+          <p>
+            Welcome to my portfolio! My work blends creativity and precision, capturing the essence of artistic vision through thoughtful compositions.
+          </p>
+          <p>
+            I find inspiration in the subtle interplay of nature, space, and movement, crafting designs that reflect balance and harmony.
+          </p>
         </StyledAboutTextContainer>
 
         {false && (
           <StyledRedTempleContainer
-          initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-          whileInView='visible'
-          viewport={{ once: true }}
-          variants={redTempleVariants}
+            initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
+            whileInView='visible'
+            viewport={{ once: true }}
+            variants={redTempleVariants}
           >
             <RedTempleWinterSVG />
           </StyledRedTempleContainer>
-)}
-
-        
+        )}
       </StyledAboutSection>
     </>
   );
 };
 
 export default About;
-

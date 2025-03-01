@@ -31,14 +31,14 @@ const Hero = () => {
               >
                 <motion.div variants={childHeroTextVariants}>
                   <h1>
-                    Welcome! <span>Cheng Wu</span>
+                   Hi there, I'm <span>Cheng</span>
                   </h1>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
-                  <h2>Innovating with data and creativity</h2>
+                  <h2>Welcome to My Ikebana Journey </h2>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
-                  <p>Bridging technology, design, and storytelling to create meaningful experiences.</p>
+                  <p>Finding Balance, Beauty, and Emotion Through Flowers</p>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
                   <motion.a
@@ -48,7 +48,7 @@ const Hero = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View Resume
+                    My Reflections
                   </motion.a>
                 </motion.div>
               </StyledTextBox>

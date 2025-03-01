@@ -25,7 +25,7 @@ const Projects = () => {
             <Project
               key={project.id}
               project={project}
-              description={t(`projects.${index}.description`)}
+              description={projectData[index].description}
               alternate={index % 2 !== 0}
             />
           );

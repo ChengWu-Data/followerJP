@@ -35,6 +35,7 @@ function App() {
               <About />
               <Projects />
               <ProjectGallery />
+              <Reflections /> 
             </>} />
             <Route path="/reflections" element={<Reflections />} /> {/* ✅ 添加新页面 */}
           </Routes>

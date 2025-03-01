@@ -1,14 +1,16 @@
-import { ThemeProvider } from 'styled-components';
-import { base, lightTheme, darkTheme } from './themes/themes';
-import About from './components/About/About';
-import Hero from './components/Hero/Hero';
-import GlobalStyles from './styles/Global/GlobalStyles';
-import Sidebar from './components/Sidebar/Sidebar';
-import Projects from './components/Projects/Projects';
-import Navigation from './components/Navigation/Navigation';
-import ProjectGallery from './components/AdditionalProjects/ProjectGallery';
-import { useGlobalContext } from './Context/Context';
-import Footer from './components/Footer/Footer';
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // ✅ 添加路由
+import { base, lightTheme, darkTheme } from "./themes/themes";
+import About from "./components/About/About";
+import Hero from "./components/Hero/Hero";
+import GlobalStyles from "./styles/Global/GlobalStyles";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Projects from "./components/Projects/Projects";
+import Navigation from "./components/Navigation/Navigation";
+import ProjectGallery from "./components/AdditionalProjects/ProjectGallery";
+import { useGlobalContext } from "./Context/Context";
+import Footer from "./components/Footer/Footer";
+import Reflections from "./components/Reflections"; // ✅ 新增 Reflections 组件
 
 function App() {
   const { theme } = useGlobalContext();
@@ -17,24 +19,31 @@ function App() {
 
   const currentTheme = {
     ...base,
-    ...(theme === 'light' ? lightMode : darkMode),
+    ...(theme === "light" ? lightMode : darkMode),
   };
 
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyles />
-      <Navigation />
-      <Sidebar />
-      <main>
-        <Hero />
-        <About />
-        
-        <Projects />
-        <ProjectGallery />
-      </main>
-      <Footer />
+      <Router>
+        <Navigation />
+        <Sidebar />
+        <main>
+          <Routes>
+            <Route path="/" element={<>
+              <Hero />
+              <About />
+              <Projects />
+              <ProjectGallery />
+            </>} />
+            <Route path="/reflections" element={<Reflections />} /> {/* ✅ 添加新页面 */}
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </ThemeProvider>
   );
 }
 
 export default App;
+

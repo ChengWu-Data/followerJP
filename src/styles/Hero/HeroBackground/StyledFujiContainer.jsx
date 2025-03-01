@@ -22,14 +22,14 @@ export const StyledFujiContainer = styled(motion.div)`
     transform: translateY(0);
     right: -37rem;
     position: absolute;
-    bottom: -22rem; /* 在较小屏幕上继续向下调整 */
+    bottom: -34rem; /* 在较小屏幕上继续向下调整 */
     width: 75rem;
     right: 0;
   }
 
   @media ${props => props.theme.bp.tabletS} {
     width: 60rem;
-    bottom: -20rem; /* 在平板上适配 */
+    bottom: -30rem; /* 在平板上适配 */
   }
 
   @media ${props => props.theme.bp.mobileL} {

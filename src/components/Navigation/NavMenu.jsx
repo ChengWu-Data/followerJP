@@ -6,8 +6,8 @@ const NavMenu = ({ toggle }) => {
   // Manually define the navigation menu, excluding "Concepts"
   const navSections = [
     { id: crypto.randomUUID(), sectionHref: "#about", sectionTitle: "About" },
-    { id: crypto.randomUUID(), sectionHref: "#projects", sectionTitle: "Projects" },
-    { id: crypto.randomUUID(), sectionHref: "#contact", sectionTitle: "Contact" }
+    { id: crypto.randomUUID(), sectionHref: "#projects", sectionTitle: "Arrangements" },
+    { id: crypto.randomUUID(), sectionHref: "#1000-word essay", sectionTitle: "Reflections in Bloom" }
   ];
 
   return (

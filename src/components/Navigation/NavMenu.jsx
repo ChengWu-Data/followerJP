@@ -7,7 +7,7 @@ const NavMenu = ({ toggle }) => {
   const navSections = [
     { id: crypto.randomUUID(), sectionHref: "#about", sectionTitle: "About" },
     { id: crypto.randomUUID(), sectionHref: "#projects", sectionTitle: "Arrangements" },
-    { id: crypto.randomUUID(), sectionHref: "#1000-word essay", sectionTitle: "Reflections in Bloom" }
+    { id: crypto.randomUUID(), sectionHref: "#reflections", sectionTitle: "Reflections in Bloom" }
   ];
 
   return (

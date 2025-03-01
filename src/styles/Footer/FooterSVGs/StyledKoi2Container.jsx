@@ -5,7 +5,7 @@ export const StyledKoi2Container = styled.div`
   height: 6.5rem;
   position: absolute;
   top: 0;
-  transform: translateX(32rem);
+  transform: translateX(39rem);
   @media ${props => props.theme.bp.desktopS} {
     width: 6rem;
     top: 2rem;

@@ -14,6 +14,6 @@ export const StyledKoi1Container = styled.div`
     transform: translateX(-5.5rem);
   }
   @media ${props => props.theme.bp.tabletS} {
-    display: none;
+    display: block;
   }
 `;

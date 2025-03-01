@@ -1,5 +1,6 @@
-import { ReactComponent as TreeBranchSVG } from '/src/assets/images/illustrations/blossom-branch-v2OG.svg';
-import { ReactComponent as DarkTreeBranchSVG } from '/src/assets/images/illustrations/blossom-branch-v2-dark.svg';
+import { motion } from 'framer-motion';
+import { ReactComponent as TreeBranchSVG } from '../../assets/images/illustrations/blossom-branch-v2OG.svg';
+import { ReactComponent as DarkTreeBranchSVG } from '../../assets/images/illustrations/blossom-branch-v2-dark.svg';
 import { ReactComponent as SunSVG } from '/src/assets/images/illustrations/rising-sun.svg';
 import { ReactComponent as MoonSVG } from '/src/assets/images/illustrations/rising-moonV2.svg';
 import { ReactComponent as FujiSVG } from '/src/assets/images/illustrations/mount-fuji-hokusai-near-ejiri-noBg-sakura02Mini.svg';
@@ -17,75 +18,103 @@ import { StyledSunContainer } from '../../styles/Hero/HeroBackground/StyledSunCo
 import { StyledTreeBranchContainer } from '../../styles/Hero/HeroBackground/StyledTreeBranchContainer';
 import { StyledCloudContainer } from '../../styles/Hero/HeroBackground/StyledCloudContainer';
 import { StyledLanternContainer } from '../../styles/Hero/HeroBackground/StyledLanternContainer';
+
 import {
   fujiVariants,
   sunVariants,
+  moonVariants,
   branchVariants,
   leftCloudVariants,
   rightCloudVariants,
   lanternVariants,
 } from '../../utils/animations';
+
 import { useReducedMotion } from 'framer-motion';
 import { useGlobalContext } from '../../Context/Context';
 
 const HeroBackground = () => {
-  const shouldReduceMotion = useReducedMotion();
+  const shouldReduceMotion = false;
+
   const { toggleTheme, theme } = useGlobalContext();
+
   return (
     <>
       <StyledHeroBgClouds />
+
+      {/* ✅ 树枝容器 */}
       <StyledTreeBranchContainer
-        id='home'
-        initial='hidden'
-        animate='visible'
+        id="home"
+        initial="hidden"
+        animate="visible"
         variants={branchVariants}
       >
-        {theme === 'light' ? <TreeBranchSVG /> : <DarkTreeBranchSVG />}
+        {/* ✅ 树枝 SVG */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={branchVariants}
+        >
+          {theme === 'light' ? <TreeBranchSVG /> : <DarkTreeBranchSVG />}
+        </motion.div>
+
+        {/* ✅ 挂在树上的灯笼 */}
         <StyledLanternContainer
           onClick={toggleTheme}
-          animate='visible'
+          animate="visible"
           variants={lanternVariants}
         >
           {theme === 'light' ? <LightLanternSVG /> : <DarkLanternSVG />}
 
-          {theme === 'light' ? (
-            <div>
-              <DarkModeSVG />
-            </div>
-          ) : (
-            <div>
-              <LightModeSVG />
-            </div>
-          )}
+          {/* ✅ 按钮放在灯笼中央 */}
+          <div className="theme-toggle">
+            {theme === 'light' ? <DarkModeSVG /> : <LightModeSVG />}
+          </div>
         </StyledLanternContainer>
       </StyledTreeBranchContainer>
+
+      {/* ✅ 富士山 */}
       <StyledFujiContainer
-        initial='hidden'
-        animate='visible'
+        initial="hidden"
+        animate="visible"
         variants={fujiVariants}
       >
         {theme === 'light' ? <FujiSVG /> : <DarkFujiSVG />}
       </StyledFujiContainer>
+
+      {/* ✅ 太阳 / 月亮 */}
       <StyledSunContainer
         initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-        animate='visible'
+        animate="visible"
         variants={sunVariants}
         pageTheme={theme}
       >
-        {theme === 'light' ? <SunSVG /> : <MoonSVG />}
+        {theme === 'light' ? (
+          <SunSVG />
+        ) : (
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={moonVariants}
+          >
+            <MoonSVG />
+          </motion.div>
+        )}
+
+        {/* ✅ 右侧云 */}
         <StyledCloudContainer
           initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-          animate='visible'
-          // animate='animate'
+          animate="visible"
           variants={rightCloudVariants}
           pageTheme={theme}
         >
           <CloudSVG />
         </StyledCloudContainer>
+
+        {/* ✅ 左侧云 */}
         <StyledCloudContainer
           left
           initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
-          animate='visible'
+          animate="visible"
           variants={leftCloudVariants}
           pageTheme={theme}
         >
@@ -97,3 +126,4 @@ const HeroBackground = () => {
 };
 
 export default HeroBackground;
+

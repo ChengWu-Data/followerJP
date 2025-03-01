@@ -78,7 +78,7 @@ export const parentHeroTextVariants = {
   },
 };
 
-//   Hero StyledTextBox children
+// Hero StyledTextBox children
 export const childHeroTextVariants = {
   hidden: { opacity: 0.01, y: '2rem' },
   visible: {
@@ -106,7 +106,7 @@ export const fujiVariants = {
   },
 };
 
-// Sun
+// Sun Animation
 export const sunVariants = {
   noMotion: noMotion,
   hidden: { opacity: 0.01, y: '20rem' },
@@ -116,6 +116,27 @@ export const sunVariants = {
     transition: {
       delay: 0.8,
       duration: 1.6,
+      ease: cubicBezierEase,
+    },
+  },
+};
+
+// Moon Animation
+export const moonVariants = {
+  noMotion: {
+    opacity: 1,
+    y: 0,
+  },
+  hidden: {
+    opacity: 0,
+    y: '10rem', // 初始位置较低
+  },
+  visible: {
+    opacity: 1,
+    y: '-5rem', // 平滑上升
+    transition: {
+      delay: 1,
+      duration: 2.5,
       ease: cubicBezierEase,
     },
   },
@@ -143,15 +164,10 @@ export const rightCloudVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    // x: [0, -40],
     transition: {
       delay: 1.8,
       duration: 1.8,
       ease: cubicBezierEase,
-
-      // repeat: Infinity,
-      // repeatType: 'reverse',
-      // type: 'tween',
     },
   },
 };
@@ -174,8 +190,6 @@ export const branchVariants = {
 // Japanese lantern
 export const lanternVariants = {
   visible: {
-    // rotateZ: [4.5, -4.5],
-    // rotateZ: [1, -1],
     transition: {
       repeat: Infinity,
       repeatType: 'reverse',
@@ -359,15 +373,12 @@ export const parentProjectVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      // delay: 0.5,
       delayChildren: 0.45,
-      // delayChildren: 0.5,
       staggerChildren: 0.3,
     },
   },
   exit: {
     transition: {
-      // duration: 2,
       delayChildren: 0.1,
       staggerChildren: 0.2,
     },
@@ -394,3 +405,4 @@ export const childProjectVariants = {
     },
   },
 };
+

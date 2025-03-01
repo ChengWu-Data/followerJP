@@ -8,8 +8,6 @@ import {
   StyledProjectContentBorder,
 } from '../../styles/Projects/ProjectContent/StyledProjectContent';
 import { StyledProjectDescriptionContainer } from '../../styles/Projects/ProjectContent/StyledProjectDescriptionContainer';
-import { ReactComponent as GithubSVG } from '/src/assets/icons/github.svg';
-import { ReactComponent as ExternalLinkSVG } from '/src/assets/icons/external-link.svg';
 
 import {
   projectSlideLeftVariants,
@@ -23,11 +21,11 @@ const Project = ({ project, description, alternate }) => {
   const { t } = useTranslation();
   const { theme } = useGlobalContext();
   const shouldReduceMotion = useReducedMotion();
+
   return (
     <StyledProjectItem
       initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
       whileInView='visible'
-      // 'amount' = when about half the component is visible animate
       viewport={{ once: true, amount: 0.4 }}
       variants={
         !alternate ? projectSlideLeftVariants : projectSlideRightVariants
@@ -51,43 +49,14 @@ const Project = ({ project, description, alternate }) => {
           </picture>
         </StyledProjectImageContainer>
       </StyledProjectImage>
+
       <StyledProjectContent alternate={alternate}>
         <StyledProjectContentBorder alternate={alternate}>
           <span>{t('featured-tag')}</span>
           <h3>{project.title}</h3>
           <StyledProjectDescriptionContainer>
-            {/* <p>{project.description}</p> */}
             <p>{description}</p>
           </StyledProjectDescriptionContainer>
-          <ul>
-            {project.technologies.map(tech => {
-              return <li key={tech}>{tech}</li>;
-            })}
-          </ul>
-          <div>
-            <ul>
-              <li>
-                <a
-                  href={project.repository}
-                  aria-label='Github'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  <GithubSVG />
-                </a>
-              </li>
-              <li>
-                <a
-                  href={project.livelink}
-                  aria-label='Live website'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  <ExternalLinkSVG />
-                </a>
-              </li>
-            </ul>
-          </div>
         </StyledProjectContentBorder>
       </StyledProjectContent>
     </StyledProjectItem>

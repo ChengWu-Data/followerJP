@@ -3,28 +3,30 @@ import { motion } from 'framer-motion';
 
 export const StyledTreeBranchContainer = styled(motion.div)`
   position: absolute;
-  top: 0;
-  left: -0.1rem;
+  top: -7rem; /* ✅ 让树整体往上移动 */
+  left: -2rem;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media ${props => props.theme.bp.desktopXS} {
-    top: -32rem;
+    top: -20rem;
   }
 
   & svg {
-    /* Original SVG params */
-    /* width="203.44472mm"
- height="143.04601mm"  */
-    /* height: 75rem; */
-    width: 50rem;
+    width: 52rem;
+    height: auto;
+
     @media ${props => props.theme.bp.desktopL} {
-      width: 46rem;
+      width: 50rem;
     }
     @media ${props => props.theme.bp.desktopXS} {
-      width: 46rem;
+      width: 48rem;
     }
     @media ${props => props.theme.bp.mobileM} {
-      width: 35rem;
+      width: 40rem;
     }
   }
 `;
+

@@ -5,54 +5,42 @@
   "name": "Cheng",
   "name-end": ".",
   "sub-heading": "Welcome to My Ikebana Journey",
-  "more-info": "This website is a reflection of my experience in Ikebana, the Japanese art of floral arrangement.",
-  "resume-btn": "resume",
-  "about-heading": "about me",
-  "about-text-top": "Hi! My name is Nick and I like building things for the web. I was introduced to web development during high school, but I became much more engaged in the field after graduating from a coding boot camp in 2022. Since then I have continued to hone my programming skills through consistent practice and dedication.",
-  "about-text-bottom": "Outside of the coding world, I enjoy traveling and studying Japanese. I spent a few years living in Japan, where I taught English and studied Japanese culture. I also play video games, DJ, enjoy pencil drawing, and practice the piano during my free time.",
-  "technology-heading": "technology",
-  "projects-heading": "projects",
-  "featured-tag": "featured project",
+  "more-info": "Finding Balance, Beauty, and Emotion Through Flowers",
+  "resume-btn": "Reflections",
+  "about-heading": "about ikebana",
+  "about-text-top": "Ikebana (生け花) is the Japanese art of flower arrangement, but it is more than just placing flowers in a vase. It is a practice of balance, movement, and emotion. Unlike Western floral design, Ikebana embraces asymmetry, negative space (Ma, 間), and simplicity, allowing each element to breathe.",
+  "about-text-bottom": "At its core, Ikebana is about Kokoro (心)—the heart and spirit of the arranger. Every branch, stem, and empty space is placed with intention, creating a quiet dialogue between nature and the artist. Over centuries, it has evolved from temple offerings to structured forms like Rikka (立花) and Shōka (生花), and now into modern Jiyuka (自由花), where creativity takes precedence. More than an art form, Ikebana is a meditation—a fleeting moment of beauty, a reflection of nature’s impermanence, and a space for quiet expression.",
+  "technology-heading": "Concepts I learned",
+  "projects-heading": "My ikebana arrangements",
+  "featured-tag": "featured arrangement",
   "projects": [
     {
       "id": 1,
-      "description": "A search application that utilizes the moogle API to search for Final Fantasy characters; users can search for the games and characters from the main series."
+      "description": "This arrangement captures the quiet but powerful growth of joy. White carnations serve as a serene focal point, while yellow statice adds texture and depth. The ruscus leaves' upward curve creates a flowing movement, reinforcing the idea that happiness expands naturally, yet remains grounded in simplicity and harmony."
     },
     {
       "id": 2,
-      "description": "A 'task manager' or todo application built with React. Users can add, delete, edit, and view their tasks. I've also included drag and drop functionality to reorder tasks, a mark as complete option, and a dark/light theme toggler."
+      "description": "Designed to evoke a peaceful awakening, this slanting arrangement features a ti leaf as the anchor, while white mums provide a delicate softness. The interplay between structure and openness enhances the presence of Ma, with purple statice introduced post-critique to add subtle contrast, reinforcing the evolving nature of serenity."
     },
     {
       "id": 3,
-      "description": "An application based on the traditional game with two extra player choices originating from 'The Big Bang Theory'. Users can play against a computer on their mobile device or desktop and try to get a high score."
+      "description": "This piece reflects contemplation and quiet introspection. The vertical composition highlights thistle as the dominant element, bringing structure and distance, softened by white carnations. Baby’s breath and leather leaf fern add depth, with purple statice introduced later to enhance contrast, making stillness feel tangible yet expressive."
     },
     {
       "id": 4,
-      "description": "A thematic and responsive calculator that allows users to easily add, subtract, and divide positive integers and floating point numbers."
+      "description": "This arrangement captures the fleeting movement of air, using slanting composition to create a sense of weightlessness. Weeping willow branches establish flow, while white carnations provide structure. Baby’s breath was added post-critique, introducing dots to tie the elements together, evoking the quiet motion of wind passing through space."
     },
     {
       "id": 5,
-      "description": "A web application I made with HTML, CSS, and JavaScript for a friend to help him connect fiber internet at work more efficiently."
+      "description": "Inspired by joy and spontaneity, this arrangement mirrors the playful energy of a starry night. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness."
     },
     {
       "id": 6,
-      "description": "A mobile responsive landing page for a fictional messaging company called 'Huddle'."
+      "description": "This piece embodies the stillness and warmth of seasonal change. The sushi mat provides a structured foundation, while warm-hued florals like alstroemeria and hypericum introduce vibrancy. Dried leaves reinforce the transient nature of autumn. Post-critique refinements adjusted visual weight, creating a stronger sense of hierarchy and movement."
     },
     {
       "id": 7,
-      "description": "A mobile-responsive app that allows users to get random pieces of advice with the click of a button."
-    },
-    {
-      "id": 8,
-      "description": "This is a browser art pad inspired by the mechanical drawing toy, Etch A Sketch. I named it 'Etch-A-Glow' because users can use glowing squares to sketch their designs."
-    },
-    {
-      "id": 9,
-      "description": "This is an interactive map application I developed using HTML, CSS, and JavaScript. Users can record their adventures and details such as how much it cost, when it happened, and the duration for future reference."
-    },
-    {
-      "id": 10,
-      "description": "A fully responsive web page for a fictional luxury hotel company called 'Nexter'."
+      "description": ""
     }
   ],
   "show-more-btn": "show more",
@@ -68,14 +56,14 @@
       "href": "/#about"
     },
     {
-      "menuTitle": "technology",
-      "href": "/#technology"
+      "menuTitle": "arrangements",
+      "href": "/#projects"
     },
     {
-      "menuTitle": "projects",
-      "href": "/#projects"
+      "menuTitle": "Reflections in Bloom",
+      "href": "/#1000-word essay"
     }
   ],
   "footer-contact": "e-mail",
-  "footer-message": "Website by Nick Mullenmeister"
+  "footer-message": "Website by Cheng Wu"
 }

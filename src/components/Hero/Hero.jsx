@@ -78,16 +78,7 @@ const Hero = () => {
                     {t('resume-btn')}
                   </motion.a>
 
-                  <StyledLanguageButton
-                    whileTap={
-                      shouldReduceMotion ? { scale: 1 } : { scale: 0.97 }
-                    }
-                    aria-label='Change language'
-                    onClick={toggleLanguageHandler}
-                  >
-                    <GlobeSVG />
-                    <span>{lang === 'en' ? '日本語' : 'English'}</span>
-                  </StyledLanguageButton>
+                  
                 </motion.div>
               </StyledTextBox>
             </motion.div>

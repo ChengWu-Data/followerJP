@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   // 如果是生产环境，就使用 '/cheng-Ikebana/'，否则用 '/'
-  base: isProduction ? '/cheng-Ikebana/' : '/',
+  base: isProduction ? '/followerJP/' : '/',
   plugins: [
     react({
       babel: {

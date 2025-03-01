@@ -42,7 +42,7 @@ const About = () => {
                 <source type='image/webp' srcSet='/rasters/n02.webp' />
                 <img
                   src='/rasters/n02.webp'
-                  alt='Landscape picture of Nick looking out at a vast mountain scenery'
+                  alt='kawase-toshiro1'
                 />
               </picture>
             </StyledLandscapeContainer>
@@ -51,7 +51,7 @@ const About = () => {
                 <source type='image/webp' srcSet='/rasters/n01.webp' />
                 <img
                   src='/rasters/n01.webp'
-                  alt='Portrait of Nick amidst greenery'
+                  alt='kawase-toshiro2'
                 />
               </picture>
             </StyledPortraitContainer>
@@ -67,14 +67,19 @@ const About = () => {
           <p>{t('about-text-top')}</p>
           <p>{t('about-text-bottom')}</p>
         </StyledAboutTextContainer>
-        <StyledRedTempleContainer
+
+        {false && (
+          <StyledRedTempleContainer
           initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
           whileInView='visible'
           viewport={{ once: true }}
           variants={redTempleVariants}
-        >
-          <RedTempleWinterSVG />
-        </StyledRedTempleContainer>
+          >
+            <RedTempleWinterSVG />
+          </StyledRedTempleContainer>
+)}
+
+        
       </StyledAboutSection>
     </>
   );

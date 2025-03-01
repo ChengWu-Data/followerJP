@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledPlantContainer = styled.div`
   position: absolute;
   bottom: 0;
-  left: 10rem;
+  left: 8rem;
   width: 9rem;
   height: auto;
   @media ${props => props.theme.bp.desktopXS} {
@@ -19,6 +19,6 @@ export const StyledPlantContainer = styled.div`
     left: 10rem;
   }
   @media ${props => props.theme.bp.mobileM} {
-    display: none;
+    display: block;
   }
 `;

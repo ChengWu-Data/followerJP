@@ -34,4 +34,3 @@ export const StyledLanternContainer = styled(motion.button)`
     width: 10rem; /* ✅ Scale lantern */
   }
 `;
-

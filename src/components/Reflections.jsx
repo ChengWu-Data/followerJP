@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading.jsx';
+import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading';
 
 
 const ReflectionsContainer = styled.section`

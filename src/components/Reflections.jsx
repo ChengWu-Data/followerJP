@@ -21,7 +21,7 @@ const ReflectionsContainer = styled.section`
 
   blockquote {
     font-style: italic;
-    color: #555; /* 引用文字颜色 */
+    
     margin: 40px 0; /* 增加引用块的上下间距 */
     padding-left: 20px;
     font-size: 2.4rem; /* 放大引用内容 */

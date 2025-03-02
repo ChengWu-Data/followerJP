@@ -10,21 +10,11 @@ export const StyledTreeBranchContainer = styled(motion.div)`
   flex-direction: column;
   align-items: center;
 
-  /* ✅ Force hide on mobile */
-  @media (max-width: 768px) {
-    display: none !important;
-    visibility: hidden;
-    opacity: 0;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
   @media ${props => props.theme.bp.desktopXS} {
     top: -20rem;
   }
 
-  & svg {
+  & .tree-svg {
     width: 52rem;
     height: auto;
 
@@ -35,7 +25,7 @@ export const StyledTreeBranchContainer = styled(motion.div)`
       width: 48rem;
     }
     @media ${props => props.theme.bp.mobileM} {
-      width: 40rem;
+      display: none !important; /* ✅ Only hide tree on mobile */
     }
   }
 `;

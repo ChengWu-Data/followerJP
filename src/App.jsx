@@ -24,37 +24,27 @@ function App() {
 
   // 音乐播放状态
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.5); // 默认音量
 
-  // 初始化音量
+  // 初始化音乐
   useEffect(() => {
     const audio = document.getElementById("bgm");
     if (audio) {
-      audio.volume = volume; // 设置初始音量
+      // 尝试自动播放（可能需要用户交互）
+      audio.play().then(() => {
+        setIsPlaying(true);
+      }).catch((error) => {
+        console.log("Autoplay was prevented:", error);
+      });
     }
-  }, [volume]);
+  }, []);
 
-  // 切换播放/暂停
-  const toggleMusic = () => {
+  // 用户交互后播放音乐
+  const handleUserInteraction = () => {
     const audio = document.getElementById("bgm");
-    if (audio) {
-      if (isPlaying) {
-        audio.pause(); // 暂停音乐
-      } else {
-        audio.play(); // 播放音乐
-      }
-      setIsPlaying(!isPlaying); // 切换播放状态
+    if (audio && !isPlaying) {
+      audio.play();
+      setIsPlaying(true);
     }
-  };
-
-  // 音量控制
-  const handleVolumeChange = (event) => {
-    const newVolume = parseFloat(event.target.value);
-    const audio = document.getElementById("bgm");
-    if (audio) {
-      audio.volume = newVolume; // 设置新音量
-    }
-    setVolume(newVolume);
   };
 
   return (
@@ -67,61 +57,18 @@ function App() {
         Your browser does not support the audio element.
       </audio>
 
-      {/* 导航栏 */}
-      <Navigation />
-
-      {/* 侧边栏 */}
-      <Sidebar />
-
-      {/* 主内容 */}
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <ProjectGallery />
-        <Reflections />
-      </main>
-
-      {/* 页脚 */}
-      <Footer />
-
-      {/* 音乐控制按钮 */}
-      <div style={{
-        position: "fixed",
-        bottom: "20px",
-        right: "20px",
-        zIndex: 1000,
-        display: "flex",
-        alignItems: "center",
-        gap: "10px",
-        backgroundColor: theme === "light" ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.8)",
-        padding: "10px",
-        borderRadius: "8px",
-        boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
-      }}>
-        <button onClick={toggleMusic} style={{
-          padding: "8px 16px",
-          borderRadius: "4px",
-          border: "none",
-          backgroundColor: theme === "light" ? "#333" : "#fff",
-          color: theme === "light" ? "#fff" : "#333",
-          cursor: "pointer",
-        }}>
-          {isPlaying ? "Pause BGM" : "Play BGM"}
-        </button>
-
-        {/* 音量控制滑块 */}
-        <input
-          type="range"
-          min="0"
-          max="1"
-          step="0.1"
-          value={volume}
-          onChange={handleVolumeChange}
-          style={{
-            cursor: "pointer",
-          }}
-        />
+      {/* 监听用户交互 */}
+      <div onClick={handleUserInteraction} style={{ width: "100%", height: "100%" }}>
+        <Navigation />
+        <Sidebar />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <ProjectGallery />
+          <Reflections />
+        </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );

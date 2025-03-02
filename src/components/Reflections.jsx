@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import StyledSectionHeading from "../../styles/UI/StyledSectionHeading"; // Import StyledSectionHeading
 
 const ReflectionsContainer = styled.section`
   max-width: 900px;
@@ -9,14 +10,6 @@ const ReflectionsContainer = styled.section`
   font-family: "Merriweather", serif;
   text-align: justify;
   color: ${({ theme }) => theme.text};
-
-  h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-  }
 
   blockquote {
     font-style: italic;
@@ -38,7 +31,9 @@ const ReflectionsContainer = styled.section`
 const Reflections = () => {
   return (
     <ReflectionsContainer>
-      <h2>Reflections in Bloom</h2>
+      <StyledSectionHeading>
+        <h2 id="projects">My Ikebana Creations</h2>
+      </StyledSectionHeading>
 
       <p>
         Throughout this class, my journey with Ikebana has been more than just
@@ -78,7 +73,7 @@ const Reflections = () => {
         In one of my arrangement, titled <strong>“Starry Cheer”</strong>, I used bright, vibrant
         flowers and an asymmetrical design to express the <strong>joy and liveliness of spring</strong>.
         The dominant element in this arrangement was the yellow billy balls, which pointed upward,
-        creating a sense of movement and lightness.The experience of arranging flowers has taught 
+        creating a sense of movement and lightness. The experience of arranging flowers has taught 
         me patience, attentiveness, and a deep appreciation for the beauty found in simplicity.
       </p>
 

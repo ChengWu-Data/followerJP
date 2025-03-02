@@ -10,7 +10,7 @@ import {
   picturesTextVariants,
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
-
+import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading';
 import { useGlobalContext } from '../../Context/Context';
 
 const About = () => {
@@ -20,9 +20,9 @@ const About = () => {
   return (
     <>
       <StyledAboutSection pageTheme={theme}>
-        
-          <h2 id="about">about ikebana</h2>
-        
+        <StyledSectionHeading>
+          <h2 id='about'> about ikebana</h2>
+        </StyledSectionHeading>
 
         <StyledPictureContainer
           initial={shouldReduceMotion ? 'noMotion' : 'hidden'}
@@ -33,7 +33,7 @@ const About = () => {
           <StyledPictureCollage>
             <StyledLandscapeContainer>
               <picture>
-                <source type='image/webp' srcSet='rasters/flower2.webp' />
+                <source type='image/webp' srcSet='/rasters/n02.webp' />
                 <img
                   src='/rasters/n02.webp'
                   alt='kawase-toshiro1'
@@ -42,7 +42,7 @@ const About = () => {
             </StyledLandscapeContainer>
             <StyledPortraitContainer>
               <picture>
-                <source type='image/webp' srcSet='rasters/flower1.webp' />
+                <source type='image/webp' srcSet='/rasters/n01.webp' />
                 <img
                   src='/rasters/n01.webp'
                   alt='kawase-toshiro2'
@@ -71,3 +71,4 @@ const About = () => {
 };
 
 export default About;
+

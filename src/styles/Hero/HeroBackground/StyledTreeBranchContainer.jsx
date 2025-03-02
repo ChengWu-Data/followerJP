@@ -10,10 +10,6 @@ export const StyledTreeBranchContainer = styled(motion.div)`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 768px) {
-    display: none; /* ✅ Hide tree branch completely on mobile */
-  }
-  
   @media ${props => props.theme.bp.desktopXS} {
     top: -20rem;
   }
@@ -29,7 +25,7 @@ export const StyledTreeBranchContainer = styled(motion.div)`
       width: 48rem;
     }
     @media ${props => props.theme.bp.mobileM} {
-      width: 40rem;
+      display: none; /* ✅ Hide tree branch completely on mobile */
     }
   }
 `;

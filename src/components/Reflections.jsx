@@ -52,10 +52,6 @@ const Reflections = () => {
         around me.
       </p>
 
-      <blockquote>
-        "Ikebana is more than just arranging flowers; it is about creating with intention, allowing emotions to guide the process."
-      </blockquote>
-
       <p>
         The first few arrangements I created were rooted in a desire for{" "}
         <strong>order and symmetry</strong>. I was drawn to the idea of balance, but I soon realized
@@ -79,15 +75,11 @@ const Reflections = () => {
       </p>
 
       <p>
-        In my first arrangement, titled <strong>“Starry Cheer”</strong>, I used bright, vibrant
+        In one of my arrangement, titled <strong>“Starry Cheer”</strong>, I used bright, vibrant
         flowers and an asymmetrical design to express the <strong>joy and liveliness of spring</strong>.
         The dominant element in this arrangement was the yellow billy balls, which pointed upward,
-        creating a sense of movement and lightness.
-      </p>
-
-      <p>
-        The experience of arranging flowers has taught me patience, attentiveness, and a deep appreciation 
-        for the beauty found in simplicity.
+        creating a sense of movement and lightness.The experience of arranging flowers has taught 
+        me patience, attentiveness, and a deep appreciation for the beauty found in simplicity.
       </p>
 
       <p>

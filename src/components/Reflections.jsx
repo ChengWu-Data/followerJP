@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
 const ReflectionsContainer = styled.section`
   max-width: 900px;
   margin: 0 auto;
@@ -32,88 +30,50 @@ const ReflectionsContainer = styled.section`
 const Reflections = () => {
   return (
     <ReflectionsContainer>
-      
-        <h2 id="reflections">Reflections in Bloom</h2>
-      
-
-        
-     
+      <h2 id="reflections">Reflections in Bloom</h2>
 
       <p>
-        Throughout this class, my journey with Ikebana has been more than just
-        about arranging flowers; it has been an exploration of <strong>personal growth</strong>,{" "}
-        <strong>creativity</strong>, and understanding the delicate balance between{" "}
-        <strong>nature and art</strong>. As I moved through each lesson, I began to realize that
-        Ikebana is not only a skill but a practice that goes beyond aesthetics—it is about{" "}
-        <strong>connecting with the materials</strong>, expressing emotions, and embracing a mindful
-        approach to creation. Each arrangement, from my first to the last, has been a unique
-        reflection of where I was emotionally and what I was learning about myself and the world
-        around me.
+        I remember the first time I walked into the classroom, not knowing what to expect from the world of flower arranging. When I signed up for the course, it wasn’t because I was seeking a professional challenge—I was about to graduate and had spent so much time on my major courses that I wanted something different for my final semester. I’ve always loved flowers—their colors, their scents, and the way they can brighten even the dullest corners of life.
       </p>
 
       <p>
-        The first few arrangements I created were rooted in a desire for{" "}
-        <strong>order and symmetry</strong>. I was drawn to the idea of balance, but I soon realized
-        that true beauty in Ikebana doesn't necessarily come from perfection—it comes from the{" "}
-        <strong>interaction between elements</strong>. In the early stages of my work, I struggled with
-        the concept of asymmetry, which was something I had not explored much in my past artistic
-        experiences. However, as I worked through the different assignments, I started to appreciate
-        how asymmetry could lead to a more dynamic and organic composition, allowing space for each
-        element to breathe.
+        At the beginning, my attempts at flower arranging were more about mastering the techniques than truly expressing something genuine. I followed every instruction meticulously, placing each flower with the care of someone assembling a piece for a gallery. I tried to adhere strictly to the slanting technique—from high to low—just as you can see in my very first arrangement. There was a part of me that craved perfection, that felt the need to fill every empty space to create a visually complete picture. But as I continued to learn, professor introduced me to the concept of Ma. I soon discovered that emptiness isn’t a void at all, it’s a space as resonant as the elements we place within it. This idea challenged everything I had thought about beauty. It was in the quiet spaces between the flowers that I began to understand that silence, pauses, and even imperfections aren’t just acceptable—they’re essential.
       </p>
 
       <p>
-        The most significant lesson I learned in this class was about <strong>Ma</strong>, the
-        Japanese concept of <strong>negative space</strong>. Initially, I was concerned with filling
-        every inch of the vase, thinking that the more flowers and elements I added, the better the
-        arrangement would be. However, as I studied Ikebana more deeply, I understood that{" "}
-        <strong>Ma</strong> is not just the absence of material; it is an active, thoughtful space
-        that holds the composition together. The space around the flowers allows for flow and
-        movement, creating a sense of balance and harmony that might otherwise be lost in a crowded
-        arrangement.
+        I clearly remember one class in particular. I wasn’t feeling my best that day, so I just sat quietly, my eyes fixed on a simple arrangement. In that stillness, something shifted within me—I realized that art, much like life, isn’t about placing everything in its “perfect” position. It’s about recognizing and honoring the space in between, allowing it to tell its own story. That lesson resonated with me in a way I never expected. It wasn’t merely about creating an arrangement that looked good, it was about learning to appreciate the beauty in moments that seem incomplete. Gradually, my own arrangements began to reflect that philosophy. I started intentionally leaving gaps, trusting that those spaces held their own weight and meaning.
       </p>
 
       <p>
-        In one of my arrangement, titled <strong>“Starry Cheer”</strong>, I used bright, vibrant
-        flowers and an asymmetrical design to express the <strong>joy and liveliness of spring</strong>.
-        The dominant element in this arrangement was the yellow billy balls, which pointed upward,
-        creating a sense of movement and lightness. The experience of arranging flowers has taught 
-        me patience, attentiveness, and a deep appreciation for the beauty found in simplicity.
+        Another concept that left a deep impression on me was Kokoro. In our classes, we were encouraged to let our emotions guide our choices—to select materials that spoke to us and to position them in a way that reflected our inner feelings. I remember one snowy afternoon when I felt especially introspective. Rather than fighting my emotions, I allowed them to flow into my work. I chose soft, subtle tones instead of bright, bold ones. That day, my arrangement wasn’t a burst of cheerful colors, it was a quiet, gentle expression of melancholy and hope. It felt raw and real, capturing a small piece of my soul within the petals and leaves.
       </p>
 
       <p>
-        As I progressed, I began to experiment with more subtle, serene arrangements that focused on{" "}
-        <strong>quiet reflection</strong>. One of my favorites was <strong>“Autumn”</strong>, which
-        used warm colors and delicate textures to express <strong>calmness and nostalgia</strong>. This
-        piece incorporated negative space as the empty areas around the branches and flowers were
-        just as important as the material itself.
+        This experience taught me that art isn’t always about exuberance or joy. Sometimes, true beauty emerges from our vulnerability and honesty. I came to understand that the flower arrangements I created were not meant to impress with perfect symmetry or flawless design. Instead, they were a way to reveal a part of who I am—my messy, unpolished, yet brilliant self. In a sense, every arrangement became like a diary entry—a moment of reflection where I could look back and see how I had grown both as an artist and as a person.
       </p>
 
       <p>
-        Each of my seven arrangements allowed me to explore different aspects of Ikebana and Japanese
-        aesthetics. The principles of <strong>line, mass, dot, and surface</strong> became key to my
-        understanding of composition. I learned that the placement of every material was a decision
-        that impacted the overall feeling of the piece. Through this process, I grew more confident in
-        my ability to create something unique and meaningful.
+        Beyond the classroom, the lessons of the flower arranging course began to seep into my everyday life. I started to see the world in a different light—more slowly, more deliberately. I now take pleasure in the gentle interplay of light and shadow on a rainy day, the subtle rustling of leaves in the breeze, and even the graceful arc of a bird in flight. These small details, which inspired the autumn theme in my sixth-arrangement, have become a constant source of wonder for me. The concept of Ma has taught me to cherish the pauses in my day—to value those quiet moments of reflection just as much as the noise and bustle that typically define modern life.
       </p>
 
       <p>
-        Reflecting on how these lessons can be applied to my own life, I recognize the influence that
-        Ikebana has had beyond the art form itself. The concept of <strong>balance</strong>, the
-        importance of <strong>negative space</strong>, and the understanding of <strong>kokoro</strong>{" "}
-        have reshaped how I approach both my work and my personal life.
+        For example, in the mornings, instead of diving straight into the chaos of the day, I spend a few minutes by the window watching the sunrise and feeling the cool air brush against my skin. I allow myself to simply exist in that space, free from distractions and the pressure to immediately achieve something. It is in these quiet moments that I feel most connected to what I’ve learned in the flower arranging class. Just as a carefully arranged vase uses empty space to accentuate each bloom, I’ve learned to appreciate the quiet gaps in my life where clarity and creativity can emerge.
       </p>
 
       <p>
-        By bringing the principles of Ikebana into my daily life, I hope to continue cultivating mindfulness, 
-        balance, and beauty in everything I do.
+        What truly warms my heart is how these practices have made me more attuned to the world around me. I now notice the delicate curve of a stray branch, the subtle gradient of color on a flower petal, or the elegant arc of a bird as it soars. Sometimes, even when I see fallen leaves on the sidewalk, I can’t help but think about how beautiful they are—reminding me that the world is still a wonderful place. In 2024, a particularly difficult year for me marked by personal lows and challenges that shook my faith in the world, these few hours each week in class helped me begin to believe that there is poetry in everyday moments—a quiet narrative woven into our lives, if only we take the time to listen.
       </p>
 
       <p>
-        Ikebana has given me more than just the ability to arrange flowers. It has offered me a way to{" "}
-        <strong>slow down, connect with nature, and find harmony within myself</strong>. Through this
-        class, I have learned that art is not just a process—it is a path to self-discovery, reflection,
-        and expression.
+        In a world that often celebrates loudness and extravagance, the art of flower arranging has taught me the gentle art of listening. I’ve learned that true beauty isn’t found in perfect forms, but in the honest interplay of light, space, and emotion. I’ve come to understand that my journey with flower arranging isn’t merely about learning a traditional art form. It’s an ongoing conversation with nature, with myself, and with the simple acts that shape our lives.
+      </p>
+
+      <p>
+        Ultimately, the lessons from this course have far exceeded the realm of flower arranging. They have reshaped my attitude toward life, encouraging me to approach every task with greater focus, presence, and sincerity. Whether I’m crafting a simple bouquet on a quiet afternoon or facing the daily challenges of a busy life, I carry with me the spirit of Ma and Kokoro.
+      </p>
+
+      <p>
+        My journey in ikebana has been one of transformation. It has taught me that every pause, every gap, every seemingly insignificant moment holds a unique kind of beauty. Perhaps the most precious lesson is learning to find and cherish the extraordinary in the ordinary. Through each arrangement, I have learned to accept my own vulnerabilities, celebrate the subtle details, and ultimately live a life as beautifully imperfect as the art I create.
       </p>
     </ReflectionsContainer>
   );

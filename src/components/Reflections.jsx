@@ -2,48 +2,45 @@ import React from "react";
 import styled from "styled-components";
 
 const ReflectionsContainer = styled.section`
-  max-width: 700px; /* 限制最大宽度 */
+  max-width: 800px; /* 适当增加宽度 */
   margin: 0 auto;
   padding: 60px 20px;
   line-height: 1.8; /* 增加行高 */
   font-family: "Merriweather", serif;
   text-align: justify;
-  color: ${({ theme }) => theme.text || "#333"}; /* 默认文字颜色 */
-  background-color: ${({ theme }) => theme.background || "#f9f9f9"}; /* 默认背景色 */
-  font-size: 1.1rem; /* 增大字体大小 */
+  color: #333; /* 深灰色文字 */
+  font-size: 1.1rem; /* 正文字体大小 */
+
+  h2 {
+    font-size: 2.5rem; /* 放大标题 */
+    margin-bottom: 40px;
+    text-align: center;
+    color: #555; /* 标题颜色 */
+    font-weight: bold; /* 加粗标题 */
+  }
 
   blockquote {
     font-style: italic;
-    color: ${({ theme }) => theme.primary || "#555"};
-    border-left: 4px solid ${({ theme }) => theme.primary || "#555"};
+    color: #555; /* 引用文字颜色 */
+    margin: 40px 0; /* 增加引用块的上下间距 */
     padding-left: 20px;
-    margin: 30px 0; /* 增加引用块的上下间距 */
-    background: ${({ theme }) => theme.blockquoteBackground || "#f0f0f0"}; /* 引用块背景色 */
-    padding: 15px;
-    border-radius: 4px;
+    font-size: 1.4rem; /* 放大引用内容 */
+    line-height: 1.6; /* 增加引用内容的行高 */
+    border-left: 4px solid #ddd; /* 简单的左边框 */
   }
 
   p {
     margin-bottom: 30px; /* 增加段落间距 */
-    text-indent: 2em; /* 首行缩进 */
   }
 
   strong {
-    color: ${({ theme }) => theme.primary || "#555"};
+    color: #555; /* 加粗文字颜色 */
   }
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    text-align: center;
-    color: ${({ theme }) => theme.primary || "#555"};
-  }
-
-  /* 分隔线样式 */
   hr {
     border: 0;
     height: 1px;
-    background: ${({ theme }) => theme.primary || "#ddd"};
+    background: #ddd; /* 分隔线颜色 */
     margin: 40px 0;
   }
 
@@ -53,7 +50,11 @@ const ReflectionsContainer = styled.section`
     padding: 40px 15px;
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem; /* 移动端标题缩小 */
+    }
+
+    blockquote {
+      font-size: 1.2rem; /* 移动端引用内容缩小 */
     }
   }
 `;

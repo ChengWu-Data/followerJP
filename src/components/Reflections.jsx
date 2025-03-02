@@ -32,7 +32,7 @@ const Reflections = () => {
   return (
     <ReflectionsContainer>
       
-        <h2 id="projects">My Ikebana Creations</h2>
+        <h2 id="projects">Reflections in Bloom</h2>
      
 
       <p>

@@ -29,23 +29,22 @@ function App() {
   useEffect(() => {
     const audio = document.getElementById("bgm");
     if (audio) {
-      // 尝试自动播放（可能需要用户交互）
-      audio.play().then(() => {
+      // 静音自动播放（绕过浏览器自动播放限制）
+      audio.muted = true;
+      audio.play();
+
+      // 用户交互后取消静音并播放音乐
+      const handleUserInteraction = () => {
+        audio.muted = false;
+        audio.play();
         setIsPlaying(true);
-      }).catch((error) => {
-        console.log("Autoplay was prevented:", error);
-      });
+        document.removeEventListener("click", handleUserInteraction); // 移除事件监听器
+      };
+
+      // 监听用户点击事件
+      document.addEventListener("click", handleUserInteraction);
     }
   }, []);
-
-  // 用户交互后播放音乐
-  const handleUserInteraction = () => {
-    const audio = document.getElementById("bgm");
-    if (audio && !isPlaying) {
-      audio.play();
-      setIsPlaying(true);
-    }
-  };
 
   return (
     <ThemeProvider theme={currentTheme}>
@@ -54,12 +53,11 @@ function App() {
       {/* 背景音乐 */}
       <audio id="bgm" loop>
         <source src="https://chengwu-data.github.io/followerJP/hogaku.mp3" type="audio/mpeg" />
-
         Your browser does not support the audio element.
       </audio>
 
-      {/* 监听用户交互 */}
-      <div onClick={handleUserInteraction} style={{ width: "100%", height: "100%" }}>
+      {/* 页面内容 */}
+      <div style={{ width: "100%", height: "100%" }}>
         <Navigation />
         <Sidebar />
         <main>

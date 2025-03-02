@@ -175,12 +175,14 @@ a:hover, a:active {
   }
 }
 
-/* Fix title position on mobile without affecting desktop */
+/* Adjust title position on mobile */
 @media (max-width: 768px) {
   .hero-title {
-    margin-top: 20rem; /* Adjust this value to move the title down */
+    margin-top: 10rem; /* Moves the title down */
+    text-align: center;
   }
 }
+
 `;
 
 export default GlobalStyles;

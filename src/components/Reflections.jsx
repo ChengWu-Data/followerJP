@@ -31,8 +31,11 @@ const ReflectionsContainer = styled.section`
 const Reflections = () => {
   return (
     <ReflectionsContainer>
-      
-        <h2 id="projects">Reflections in Bloom</h2>
+      <StyledSectionHeading>
+        <h2 id="reflections">Reflections in Bloom</h2>
+      </StyledSectionHeading>
+
+        
      
 
       <p>

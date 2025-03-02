@@ -12,7 +12,7 @@ const ReflectionsContainer = styled.section`
   font-size: 1.1rem; /* 正文字体大小 */
 
   h2 {
-    font-size: 3.6rem; /* 放大标题 */
+    font-size: 4rem; /* 放大标题 */
     margin-bottom: 40px;
     text-align: center;
 

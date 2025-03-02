@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledSectionHeading } from "../../styles/UI/StyledSectionHeading";
 
 
 
@@ -33,9 +32,9 @@ const ReflectionsContainer = styled.section`
 const Reflections = () => {
   return (
     <ReflectionsContainer>
-      <StyledSectionHeading>
+      
         <h2 id="reflections">Reflections in Bloom</h2>
-      </StyledSectionHeading>
+      
 
         
      

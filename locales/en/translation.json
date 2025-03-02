@@ -1,0 +1,69 @@
+{
+  "app-title": "Home | Cheng Wu • Ikebana",
+  "loading": "Loading...",
+  "greetings": "Hi there, I'm ",
+  "name": "Cheng",
+  "name-end": ".",
+  "sub-heading": "Welcome to My Ikebana Journey",
+  "more-info": "Finding Balance, Beauty, and Emotion Through Flowers",
+  "resume-btn": "Reflections",
+  "about-heading": "about ikebana",
+  "about-text-top": "Ikebana (生け花) is the Japanese art of flower arrangement, but it is more than just placing flowers in a vase. It is a practice of balance, movement, and emotion. Unlike Western floral design, Ikebana embraces asymmetry, negative space (Ma, 間), and simplicity, allowing each element to breathe.",
+  "about-text-bottom": "At its core, Ikebana is about Kokoro (心)—the heart and spirit of the arranger. Every branch, stem, and empty space is placed with intention, creating a quiet dialogue between nature and the artist. Over centuries, it has evolved from temple offerings to structured forms like Rikka (立花) and Shōka (生花), and now into modern Jiyuka (自由花), where creativity takes precedence. More than an art form, Ikebana is a meditation—a fleeting moment of beauty, a reflection of nature’s impermanence, and a space for quiet expression.",
+  "technology-heading": "Concepts I learned",
+  "projects-heading": "My ikebana arrangements",
+  "featured-tag": "featured arrangement",
+  "projects": [
+    {
+      "id": 1,
+      "description": "This arrangement captures the quiet but powerful growth of joy. White carnations serve as a serene focal point, while yellow statice adds texture and depth. The ruscus leaves' upward curve creates a flowing movement, reinforcing the idea that happiness expands naturally, yet remains grounded in simplicity and harmony."
+    },
+    {
+      "id": 2,
+      "description": "Designed to evoke a peaceful awakening, this slanting arrangement features a ti leaf as the anchor, while white mums provide a delicate softness. The interplay between structure and openness enhances the presence of Ma, with purple statice introduced post-critique to add subtle contrast, reinforcing the evolving nature of serenity."
+    },
+    {
+      "id": 3,
+      "description": "This piece reflects contemplation and quiet introspection. The vertical composition highlights thistle as the dominant element, bringing structure and distance, softened by white carnations. Baby’s breath and leather leaf fern add depth, with purple statice introduced later to enhance contrast, making stillness feel tangible yet expressive."
+    },
+    {
+      "id": 4,
+      "description": "This arrangement captures the fleeting movement of air, using slanting composition to create a sense of weightlessness. Weeping willow branches establish flow, while white carnations provide structure. Baby’s breath was added post-critique, introducing dots to tie the elements together, evoking the quiet motion of wind passing through space."
+    },
+    {
+      "id": 5,
+      "description": "Inspired by joy and spontaneity, this arrangement mirrors the playful energy of a starry night. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness."
+    },
+    {
+      "id": 6,
+      "description": "This piece embodies the stillness and warmth of seasonal change. The sushi mat provides a structured foundation, while warm-hued florals like alstroemeria and hypericum introduce vibrancy. Dried leaves reinforce the transient nature of autumn. Post-critique refinements adjusted visual weight, creating a stronger sense of hierarchy and movement."
+    },
+    {
+      "id": 7,
+      "description": ""
+    }
+  ],
+  "show-more-btn": "show more",
+  "show-less-btn": "show less",
+  "learn-more": "more info",
+  "navigation": [
+    {
+      "menuTitle": "home",
+      "href": "/#home"
+    },
+    {
+      "menuTitle": "about",
+      "href": "/#about"
+    },
+    {
+      "menuTitle": "arrangements",
+      "href": "/#projects"
+    },
+    {
+      "menuTitle": "Reflections in Bloom",
+      "href": "/#reflections"
+    }
+  ],
+  "footer-contact": "e-mail",
+  "footer-message": "Website by Cheng Wu"
+}

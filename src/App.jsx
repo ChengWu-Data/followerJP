@@ -1,12 +1,12 @@
 import { ThemeProvider } from "styled-components";
 import { HashRouter as Router, Route, Routes } from "react-router-dom"; // ✅ 用 HashRouter 代替 BrowserRouter
 import { base, lightTheme, darkTheme } from "./themes/themes";
-import About from "./components/About/About";
+import About from "./components/About";
 import Hero from "./components/Hero/Hero";
 import GlobalStyles from "./styles/Global/GlobalStyles";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Projects from "./components/Projects/Projects";
-import Navigation from "./components/Navigation/Navigation";
+import Projects from "./components/Projects";
+import Navigation from './components/Navigation';
 import ProjectGallery from "./components/AdditionalProjects/ProjectGallery";
 import { useGlobalContext } from "./Context/Context";
 import Footer from "./components/Footer/Footer";

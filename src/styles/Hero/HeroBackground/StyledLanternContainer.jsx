@@ -2,15 +2,16 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const StyledLanternContainer = styled(motion.button)`
-  width: 13rem; /* ✅ 调整灯笼大小 */
-  position: relative; /* ✅ 让灯笼跟随树的位置 */
+  width: 13rem; /* ✅ Adjust lantern size */
+  position: absolute; /* ✅ Make it independent from tree */
+  top: -5rem; /* ✅ Position near tree */
+  left: 3rem; /* ✅ Adjust based on design */
   background-color: transparent;
   cursor: pointer;
   z-index: 1500;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -20rem; /* ✅ 让灯笼更接近树枝 */
 
   & svg {
     width: 100%;
@@ -19,17 +20,18 @@ export const StyledLanternContainer = styled(motion.button)`
 
   & div {
     position: absolute;
-    bottom: 2.5rem; /* ✅ 调整按钮的位置 */
+    bottom: 2.5rem; /* ✅ Adjust button position */
     left: 50%;
     transform: translateX(-50%);
-    width: 3rem; /* ✅ 缩小按钮大小 */
+    width: 3rem; /* ✅ Scale button */
     height: 3rem;
+  }
 
-    @media ${props => props.theme.bp.desktopXS} {
-      bottom: 2.5rem;
-    }
-    @media ${props => props.theme.bp.tabletS} {
-      bottom: 2rem;
-    }
+  /* ✅ Hide tree but keep lantern on mobile */
+  @media ${props => props.theme.bp.mobileM} {
+    top: 1rem; /* ✅ Move lantern up on mobile */
+    left: 1rem; /* ✅ Adjust position */
+    width: 10rem; /* ✅ Scale lantern */
   }
 `;
+

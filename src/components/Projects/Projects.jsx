@@ -15,6 +15,7 @@ const Projects = () => {
       <StyledSectionHeading>
         <h2 id="projects">My Arrangements</h2>
       </StyledSectionHeading>
+
       <StyledProjectsList>
         {projectData.map((project, index) => {
           return (

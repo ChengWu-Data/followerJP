@@ -44,7 +44,7 @@ const Hero = () => {
                   <motion.a
                     pageTheme={theme}
                     whileTap={shouldReduceMotion ? { scale: 1 } : { scale: 0.97 }}
-                    href="/Resume.pdf"
+                    href="/1000words.pdf"  // ✅ Corrected to link to the essay PDF
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -61,3 +61,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -24,7 +24,7 @@ const ReflectionsContainer = styled.section`
     color: #555; /* 引用文字颜色 */
     margin: 40px 0; /* 增加引用块的上下间距 */
     padding-left: 20px;
-    font-size: 3rem; /* 放大引用内容 */
+    font-size: 2.4rem; /* 放大引用内容 */
     line-height: 1.6; /* 增加引用内容的行高 */
     border-left: 4px solid #ddd; /* 简单的左边框 */
   }

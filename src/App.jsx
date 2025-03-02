@@ -6,7 +6,7 @@ import Hero from "./components/Hero/Hero";
 import GlobalStyles from "./styles/Global/GlobalStyles";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Projects from "./components/Projects/Projects";
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation/Navigation';
 import ProjectGallery from "./components/AdditionalProjects/ProjectGallery";
 import { useGlobalContext } from "./Context/Context";
 import Footer from "./components/Footer/Footer";

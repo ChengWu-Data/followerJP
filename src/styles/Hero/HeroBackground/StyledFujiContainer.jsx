@@ -22,7 +22,7 @@ export const StyledFujiContainer = styled(motion.div)`
     transform: translateY(0);
     right: -37rem;
     position: absolute;
-    bottom: -39rem; /* 在较小屏幕上继续向下调整 */
+    bottom: -41rem; /* 在较小屏幕上继续向下调整 */
     width: 75rem;
     right: 0;
   }

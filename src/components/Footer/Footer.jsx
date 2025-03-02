@@ -64,7 +64,7 @@ const Footer = () => {
           </StyledBoulderContainer>
           <StyledContactInfo>
             <li>Contact: datajourney.chengw@gmail.com</li>
-            <li>Welcome to my portfolio site!</li>
+            
           </StyledContactInfo>
         </StyledContactInfoContainer>
         <StyledPlantContainer>

@@ -8,14 +8,14 @@ const ReflectionsContainer = styled.section`
   line-height: 1.8; /* 增加行高 */
   font-family: "Merriweather", serif;
   text-align: justify;
-  color: #333; /* 深灰色文字 */
+ 
   font-size: 1.1rem; /* 正文字体大小 */
 
   h2 {
-    font-size: 2.5rem; /* 放大标题 */
+    font-size: 3.6rem; /* 放大标题 */
     margin-bottom: 40px;
     text-align: center;
-    color: #555; /* 标题颜色 */
+
     font-weight: bold; /* 加粗标题 */
   }
 
@@ -24,7 +24,7 @@ const ReflectionsContainer = styled.section`
     color: #555; /* 引用文字颜色 */
     margin: 40px 0; /* 增加引用块的上下间距 */
     padding-left: 20px;
-    font-size: 1.4rem; /* 放大引用内容 */
+    font-size: 3rem; /* 放大引用内容 */
     line-height: 1.6; /* 增加引用内容的行高 */
     border-left: 4px solid #ddd; /* 简单的左边框 */
   }

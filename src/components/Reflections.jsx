@@ -2,28 +2,59 @@ import React from "react";
 import styled from "styled-components";
 
 const ReflectionsContainer = styled.section`
-  max-width: 900px;
+  max-width: 700px; /* 限制最大宽度 */
   margin: 0 auto;
   padding: 60px 20px;
-  line-height: 1.8;
+  line-height: 1.8; /* 增加行高 */
   font-family: "Merriweather", serif;
   text-align: justify;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text || "#333"}; /* 默认文字颜色 */
+  background-color: ${({ theme }) => theme.background || "#f9f9f9"}; /* 默认背景色 */
+  font-size: 1.1rem; /* 增大字体大小 */
 
   blockquote {
     font-style: italic;
-    color: ${({ theme }) => theme.primary};
-    border-left: 4px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary || "#555"};
+    border-left: 4px solid ${({ theme }) => theme.primary || "#555"};
     padding-left: 20px;
-    margin: 20px 0;
+    margin: 30px 0; /* 增加引用块的上下间距 */
+    background: ${({ theme }) => theme.blockquoteBackground || "#f0f0f0"}; /* 引用块背景色 */
+    padding: 15px;
+    border-radius: 4px;
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* 增加段落间距 */
+    text-indent: 2em; /* 首行缩进 */
   }
 
   strong {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.primary || "#555"};
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: ${({ theme }) => theme.primary || "#555"};
+  }
+
+  /* 分隔线样式 */
+  hr {
+    border: 0;
+    height: 1px;
+    background: ${({ theme }) => theme.primary || "#ddd"};
+    margin: 40px 0;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 40px 15px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 `;
 
@@ -40,9 +71,15 @@ const Reflections = () => {
         At the beginning, my attempts at flower arranging were more about mastering the techniques than truly expressing something genuine. I followed every instruction meticulously, placing each flower with the care of someone assembling a piece for a gallery. I tried to adhere strictly to the slanting technique—from high to low—just as you can see in my very first arrangement. There was a part of me that craved perfection, that felt the need to fill every empty space to create a visually complete picture. But as I continued to learn, professor introduced me to the concept of Ma. I soon discovered that emptiness isn’t a void at all, it’s a space as resonant as the elements we place within it. This idea challenged everything I had thought about beauty. It was in the quiet spaces between the flowers that I began to understand that silence, pauses, and even imperfections aren’t just acceptable—they’re essential.
       </p>
 
+      <hr /> {/* 分隔线 */}
+
       <p>
         I clearly remember one class in particular. I wasn’t feeling my best that day, so I just sat quietly, my eyes fixed on a simple arrangement. In that stillness, something shifted within me—I realized that art, much like life, isn’t about placing everything in its “perfect” position. It’s about recognizing and honoring the space in between, allowing it to tell its own story. That lesson resonated with me in a way I never expected. It wasn’t merely about creating an arrangement that looked good, it was about learning to appreciate the beauty in moments that seem incomplete. Gradually, my own arrangements began to reflect that philosophy. I started intentionally leaving gaps, trusting that those spaces held their own weight and meaning.
       </p>
+
+      <blockquote>
+        "The concept of Ma has taught me to cherish the pauses in my day—to value those quiet moments of reflection just as much as the noise and bustle that typically define modern life."
+      </blockquote>
 
       <p>
         Another concept that left a deep impression on me was Kokoro. In our classes, we were encouraged to let our emotions guide our choices—to select materials that spoke to us and to position them in a way that reflected our inner feelings. I remember one snowy afternoon when I felt especially introspective. Rather than fighting my emotions, I allowed them to flow into my work. I chose soft, subtle tones instead of bright, bold ones. That day, my arrangement wasn’t a burst of cheerful colors, it was a quiet, gentle expression of melancholy and hope. It felt raw and real, capturing a small piece of my soul within the petals and leaves.
@@ -51,6 +88,8 @@ const Reflections = () => {
       <p>
         This experience taught me that art isn’t always about exuberance or joy. Sometimes, true beauty emerges from our vulnerability and honesty. I came to understand that the flower arrangements I created were not meant to impress with perfect symmetry or flawless design. Instead, they were a way to reveal a part of who I am—my messy, unpolished, yet brilliant self. In a sense, every arrangement became like a diary entry—a moment of reflection where I could look back and see how I had grown both as an artist and as a person.
       </p>
+
+      <hr /> {/* 分隔线 */}
 
       <p>
         Beyond the classroom, the lessons of the flower arranging course began to seep into my everyday life. I started to see the world in a different light—more slowly, more deliberately. I now take pleasure in the gentle interplay of light and shadow on a rainy day, the subtle rustling of leaves in the breeze, and even the graceful arc of a bird in flight. These small details, which inspired the autumn theme in my sixth-arrangement, have become a constant source of wonder for me. The concept of Ma has taught me to cherish the pauses in my day—to value those quiet moments of reflection just as much as the noise and bustle that typically define modern life.
@@ -63,6 +102,8 @@ const Reflections = () => {
       <p>
         What truly warms my heart is how these practices have made me more attuned to the world around me. I now notice the delicate curve of a stray branch, the subtle gradient of color on a flower petal, or the elegant arc of a bird as it soars. Sometimes, even when I see fallen leaves on the sidewalk, I can’t help but think about how beautiful they are—reminding me that the world is still a wonderful place. In 2024, a particularly difficult year for me marked by personal lows and challenges that shook my faith in the world, these few hours each week in class helped me begin to believe that there is poetry in everyday moments—a quiet narrative woven into our lives, if only we take the time to listen.
       </p>
+
+      <hr /> {/* 分隔线 */}
 
       <p>
         In a world that often celebrates loudness and extravagance, the art of flower arranging has taught me the gentle art of listening. I’ve learned that true beauty isn’t found in perfect forms, but in the honest interplay of light, space, and emotion. I’ve come to understand that my journey with flower arranging isn’t merely about learning a traditional art form. It’s an ongoing conversation with nature, with myself, and with the simple acts that shape our lives.

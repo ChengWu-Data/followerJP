@@ -53,7 +53,9 @@ function App() {
 
       {/* 背景音乐 */}
       <audio id="bgm" loop>
-         <source src="https://chengwu-data.github.io/followerJP/hogaku.mp3" type="audio/mpeg" />
+        <source src="https://chengwu-data.github.io/followerJP/hogaku.mp3" type="audio/mpeg" />
+        <source src="https://chengwu-data.github.io/followerJP/hogaku.ogg" type="audio/ogg" />
+        <source src="https://chengwu-data.github.io/followerJP/hogaku.wav" type="audio/wav" />
         Your browser does not support the audio element.
       </audio>
 

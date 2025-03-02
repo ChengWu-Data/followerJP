@@ -29,7 +29,7 @@ export const StyledFujiContainer = styled(motion.div)`
 
   @media ${props => props.theme.bp.tabletS} {
     width: 60rem;
-    bottom: -38rem; /* 在平板上适配 */
+    bottom: -40rem; /* 在平板上适配 */
   }
 
   @media ${props => props.theme.bp.mobileL} {

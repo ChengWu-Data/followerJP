@@ -10,6 +10,7 @@ const NavMenu = ({ toggle }) => {
     { id: crypto.randomUUID(), sectionHref: "#reflections", sectionTitle: "Reflections in Bloom" }
   ];
 
+
   return (
     <StyledMenuList variants={menuVariants}>
       {navSections.map(section => (

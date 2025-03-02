@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { HashRouter as Router, Route, Routes } from "react-router-dom"; // ✅ 用 HashRouter 代替 BrowserRouter
 import { base, lightTheme, darkTheme } from "./themes/themes";
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
@@ -25,26 +24,18 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyles />
-      <Router>
-        <Navigation />
-        <Sidebar />
-        <main>
-          <Routes>
-            <Route path="/" element={<>
-              <Hero />
-              <About />
-              <Projects />
-              <ProjectGallery />
-              <Reflections /> 
-            </>} />
-            <Route path="/reflections" element={<Reflections />} /> {/* ✅ 添加新页面 */}
-          </Routes>
-        </main>
-        <Footer />
-      </Router>
+      <Navigation />
+      <Sidebar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <ProjectGallery />
+        <Reflections />
+      </main>
+      <Footer />
     </ThemeProvider>
   );
 }
 
 export default App;
-

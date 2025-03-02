@@ -10,7 +10,7 @@ import {
   picturesTextVariants,
 } from '../../utils/animations';
 import { useReducedMotion } from 'framer-motion';
-import { StyledSectionHeading } from '../../styles/UI/StyledSectionHeading';
+
 import { useGlobalContext } from '../../Context/Context';
 
 const About = () => {
@@ -20,9 +20,9 @@ const About = () => {
   return (
     <>
       <StyledAboutSection pageTheme={theme}>
-        <StyledSectionHeading>
+        
           <h2 id="about">about ikebana</h2>
-        </StyledSectionHeading>
+        
 
         <StyledPictureContainer
           initial={shouldReduceMotion ? 'noMotion' : 'hidden'}

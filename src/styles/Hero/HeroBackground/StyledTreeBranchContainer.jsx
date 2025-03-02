@@ -3,16 +3,15 @@ import { motion } from 'framer-motion';
 
 export const StyledTreeBranchContainer = styled(motion.div)`
   position: absolute;
-  top: -7rem; /* ✅ Restore previous positioning */
+  top: -7rem; /* ✅ 让树整体往上移动 */
   left: -2rem;
   z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  /* ✅ Hide only for mobile */
-  @media ${props => props.theme.bp.mobileM} {
-    display: flex; /* ✅ Restore tree on desktop */
+  @media ${props => props.theme.bp.desktopXS} {
+    top: -20rem;
   }
 
   & svg {
@@ -25,5 +24,9 @@ export const StyledTreeBranchContainer = styled(motion.div)`
     @media ${props => props.theme.bp.desktopXS} {
       width: 48rem;
     }
+    @media ${props => props.theme.bp.mobileM} {
+      width: 40rem;
+    }
   }
 `;
+

@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <StyledProjectsSection>
       <StyledSectionHeading>
-        <h2 id="My Ikebana Creations">Projects</h2>
+        <h2 id="/#projects">My Ikebana Creations</h2>
       </StyledSectionHeading>
       <StyledProjectsList>
         {projectData.map((project, index) => {

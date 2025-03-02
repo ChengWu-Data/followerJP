@@ -86,7 +86,8 @@ const Reflections = () => {
       </p>
 
       <p>
-        "The experience of arranging flowers has taught me patience, attentiveness, and a deep appreciation for the beauty found in simplicity."
+        The experience of arranging flowers has taught me patience, attentiveness, and a deep appreciation 
+        for the beauty found in simplicity.
       </p>
 
       <p>
@@ -113,7 +114,8 @@ const Reflections = () => {
       </p>
 
       <p>
-        "By bringing the principles of Ikebana into my daily life, I hope to continue cultivating mindfulness, balance, and beauty in everything I do."
+        By bringing the principles of Ikebana into my daily life, I hope to continue cultivating mindfulness, 
+        balance, and beauty in everything I do.
       </p>
 
       <p>

@@ -85,9 +85,9 @@ const Reflections = () => {
         creating a sense of movement and lightness.
       </p>
 
-      <blockquote>
+      <p>
         "The experience of arranging flowers has taught me patience, attentiveness, and a deep appreciation for the beauty found in simplicity."
-      </blockquote>
+      </p>
 
       <p>
         As I progressed, I began to experiment with more subtle, serene arrangements that focused on{" "}
@@ -112,9 +112,9 @@ const Reflections = () => {
         have reshaped how I approach both my work and my personal life.
       </p>
 
-      <blockquote>
+      <p>
         "By bringing the principles of Ikebana into my daily life, I hope to continue cultivating mindfulness, balance, and beauty in everything I do."
-      </blockquote>
+      </p>
 
       <p>
         Ikebana has given me more than just the ability to arrange flowers. It has offered me a way to{" "}

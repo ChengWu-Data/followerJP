@@ -31,9 +31,9 @@ const ReflectionsContainer = styled.section`
 const Reflections = () => {
   return (
     <ReflectionsContainer>
-      <StyledSectionHeading>
+      
         <h2 id="projects">My Ikebana Creations</h2>
-      </StyledSectionHeading>
+     
 
       <p>
         Throughout this class, my journey with Ikebana has been more than just

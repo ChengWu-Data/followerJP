@@ -53,7 +53,7 @@ function App() {
 
       {/* 背景音乐 */}
       <audio id="bgm" loop>
-        <source src="./hogaku.mp3" type="audio/mpeg" />
+        <source src="/hogaku.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 

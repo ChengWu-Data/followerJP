@@ -35,7 +35,7 @@ export const StyledFujiContainer = styled(motion.div)`
   @media ${props => props.theme.bp.mobileL} {
     width: 70rem;
     transform: translateX(13rem);
-    bottom: -9rem;
+    bottom: -20rem;
   }
 
   & svg {

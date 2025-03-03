@@ -51,17 +51,18 @@ const Project = ({ project, description, alternate }) => {
           {project.circleImageUrl && (
             <img
               src={project.circleImageUrl}
-              alt="circular"
+              alt="Circular"
               style={{
                 position: 'absolute',
-                bottom: '-20px',    // 向下溢出一部分
-                right: '-20px',     // 向右溢出一部分
-                width: '120px',
-                height: '120px',
+                top: '10px',       // 往下调节可以放到左下角
+                left: '10px',      // 往右调节可以更靠内或外
+                width: '120px',    // 你可自行调整
+                height: '120px',   // 宽高相等才是正圆
+                objectFit: 'cover',// 防止变形
                 borderRadius: '50%',
-                border: '4px solid #fff',          // 给个白色边框
-                boxShadow: '0 0 10px rgba(0,0,0,0.15)', // 轻微阴影
-                zIndex: 2,                          // 确保在主图之上
+                border: '4px solid #fff',
+                boxShadow: '0 0 10px rgba(0,0,0,0.15)',
+                zIndex: 2,
               }}
             />
           )}
@@ -82,4 +83,3 @@ const Project = ({ project, description, alternate }) => {
 };
 
 export default Project;
-

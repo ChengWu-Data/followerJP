@@ -1,4 +1,5 @@
 // src/components/Projects/Project.jsx
+
 import { StyledProjectItem } from '../../styles/Projects/ProjectsLayout/StyledProjectsSection';
 import {
   StyledProjectImageContainer,
@@ -30,21 +31,39 @@ const Project = ({ project, description, alternate }) => {
       alternate={alternate}
     >
       <StyledProjectImage pageTheme={theme} alternate={alternate}>
-        <StyledProjectImageContainer>
+        {/* 让父容器可以进行绝对定位 */}
+        <StyledProjectImageContainer style={{ position: 'relative', overflow: 'visible' }}>
           <picture>
-            <source srcSet={project.imageUrl} type="image/webp" media="(min-width: 768px)" />
-            <source srcSet={project.mobileUrl} type="image/webp" media="(max-width: 768px)" />
+            <source
+              srcSet={project.imageUrl}
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcSet={project.mobileUrl}
+              type="image/webp"
+              media="(max-width: 768px)"
+            />
             <img src={project.imageUrl} alt={project.title} />
           </picture>
-          {/* 如果有圆形图片，则显示 */}
+
+          {/* 如果有 circleImageUrl，就用绝对定位显示圆形图 */}
           {project.circleImageUrl && (
-            <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-              <img 
-                src={project.circleImageUrl} 
-                alt="Circular" 
-                style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-              />
-            </div>
+            <img
+              src={project.circleImageUrl}
+              alt="circular"
+              style={{
+                position: 'absolute',
+                bottom: '-20px',    // 向下溢出一部分
+                right: '-20px',     // 向右溢出一部分
+                width: '120px',
+                height: '120px',
+                borderRadius: '50%',
+                border: '4px solid #fff',          // 给个白色边框
+                boxShadow: '0 0 10px rgba(0,0,0,0.15)', // 轻微阴影
+                zIndex: 2,                          // 确保在主图之上
+              }}
+            />
           )}
         </StyledProjectImageContainer>
       </StyledProjectImage>

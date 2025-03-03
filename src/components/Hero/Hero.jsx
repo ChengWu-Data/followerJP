@@ -31,7 +31,7 @@ const Hero = () => {
               >
                 <motion.div variants={childHeroTextVariants}>
                   <h1>
-                   Hi there, I'm <span>Cheng</span>
+                    Hi there, I'm <span>Cheng</span>
                   </h1>
                 </motion.div>
                 <motion.div variants={childHeroTextVariants}>
@@ -61,4 +61,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

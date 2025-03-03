@@ -16,6 +16,12 @@ const StyledTextBox = styled(motion.div)`
     text-align: center;
   }
 
+  /* 移动端适配 */
+  @media ${props => props.theme.bp.mobileL} {
+    top: 15% !important; /* 封面文字下移 */
+    z-index: 2000; /* 提升层级，确保文字不被遮挡 */
+  }
+
   & h1 {
     font-size: 3.8rem;
     font-weight: 600;
@@ -54,7 +60,6 @@ const StyledTextBox = styled(motion.div)`
 
     @media ${props => props.theme.bp.desktopL} {
       font-size: 3.4rem;
-
       line-height: 1.2;
     }
     @media ${props => props.theme.bp.desktopM} {

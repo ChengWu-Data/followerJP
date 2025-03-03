@@ -3,7 +3,7 @@ export const projectData = [
     id: crypto.randomUUID(),
     title: 'Emerging Bliss',
     description: 
-    "This arrangement captures the quiet but powerful growth of joy. White carnations serve as a serene focal point, while yellow statice adds texture and depth. The ruscus leaves' upward curve creates a flowing movement, reinforcing the idea that happiness expands naturally, yet remains grounded in simplicity and harmony.",
+    "This arrangement captures the quiet but powerful growth of joy.  while yellow statice serve as a serene focal point, White carnations adds texture and depth. The ruscus leaves' upward curve creates a flowing movement, reinforcing the idea that happiness expands naturally, yet remains grounded in simplicity and harmony.",
     imageUrl: 'rasters/1.webp',
     mobileUrl: 'rasters/1.webp',
   },
@@ -36,10 +36,11 @@ export const projectData = [
     id: crypto.randomUUID(),
     title: 'Starry Cheer',
     description:
-      'Inspired by joy and spontaneity, this arrangement mirrors the playful energy of a starry night. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness.',
+      'Inspired by my dog Star, this arrangement mirrors the playful energy of a starry night. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness.',
       
     imageUrl: 'rasters/FiberChart.webp',
     mobileUrl: 'rasters/FiberChart.webp',
+    circleImageUrl: 'rasters/Star.jpg' 
 
   },
   {

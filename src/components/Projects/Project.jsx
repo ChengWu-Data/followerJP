@@ -1,3 +1,4 @@
+// src/components/Projects/Project.jsx
 import { StyledProjectItem } from '../../styles/Projects/ProjectsLayout/StyledProjectsSection';
 import {
   StyledProjectImageContainer,
@@ -35,6 +36,16 @@ const Project = ({ project, description, alternate }) => {
             <source srcSet={project.mobileUrl} type="image/webp" media="(max-width: 768px)" />
             <img src={project.imageUrl} alt={project.title} />
           </picture>
+          {/* 如果有圆形图片，则显示 */}
+          {project.circleImageUrl && (
+            <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+              <img 
+                src={project.circleImageUrl} 
+                alt="Circular" 
+                style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+              />
+            </div>
+          )}
         </StyledProjectImageContainer>
       </StyledProjectImage>
 
@@ -52,3 +63,4 @@ const Project = ({ project, description, alternate }) => {
 };
 
 export default Project;
+

@@ -45,6 +45,7 @@ export const StyledHeroContainer = styled.div`
   margin: 0 10rem;
   max-width: 114rem;
   position: relative;
+
   @media ${props => props.theme.bp.desktopXS} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -52,9 +53,11 @@ export const StyledHeroContainer = styled.div`
     margin: 0 18rem;
     place-items: center;
   }
+
   @media ${props => props.theme.bp.tabletS} {
     margin: 0 12rem;
   }
+
   @media ${props => props.theme.bp.mobileL} {
     margin: 0 6rem;
     grid-row: 1 / 2;
@@ -63,7 +66,7 @@ export const StyledHeroContainer = styled.div`
 
     & div {
       grid-row: 2 / 3;
-      z-index: 1500;
+      z-index: 2000; /* 提升层级，确保文字不被遮挡 */
     }
   }
 `;

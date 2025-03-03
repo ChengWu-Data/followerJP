@@ -86,7 +86,7 @@ export const StyledSunContainer = styled(motion.div)`
     right: 17rem;
 
     right: 9.2rem;
-    bottom: 16rem;
+    bottom: 22rem;
     height: 22rem;
     width: 22rem;
 

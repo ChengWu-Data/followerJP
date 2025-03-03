@@ -36,7 +36,7 @@ export const projectData = [
     id: crypto.randomUUID(),
     title: 'Starry Cheer',
     description:
-      'Inspired by my dog Star, this arrangement mirrors the playful energy of the way how the stars make me feel. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness.',
+      'Inspired by my dog Star, this arrangement mirrors the playful energy of the way how the Star make me feel. The radiating structure enhances movement, while miniature aster, sweet william, and waxflower create scattered bursts of color. Adjustments focused on refining focal points, ensuring a lively yet balanced visual rhythm reflective of unfiltered happiness.',
       
     imageUrl: 'rasters/FiberChart.webp',
     mobileUrl: 'rasters/FiberChart.webp',

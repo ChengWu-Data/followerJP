@@ -93,7 +93,7 @@ const Reflections = () => {
       <hr /> {/* 分隔线 */}
 
       <p>
-        Beyond the classroom, the lessons of the flower arranging course began to seep into my everyday life. I started to see the world in a different light—more slowly, more deliberately. I now take pleasure in the gentle interplay of light and shadow on a rainy day, the subtle rustling of leaves in the breeze, and even the graceful arc of a bird in flight. These small details, which inspired the autumn theme in my sixth-arrangement, have become a constant source of wonder for me. The concept of Ma has taught me to cherish the pauses in my day—to value those quiet moments of reflection just as much as the noise and bustle that typically define modern life.
+        Beyond the classroom, the lessons of the flower arranging course began to seep into my everyday life. I started to see the world in a different light—more slowly, more deliberately. I now take pleasure in the gentle interplay of light and shadow on a rainy day, the subtle rustling of leaves in the breeze, and even the graceful arc of a bird in flight. These small details, which inspired the autumn theme in my sixth-arrangement, have become a constant source of wonder for me. 
       </p>
 
       <p>

@@ -18,7 +18,7 @@ const StyledTextBox = styled(motion.div)`
 
   /* 移动端适配 */
   @media ${props => props.theme.bp.mobileL} {
-    top: 20% !important; /* 封面文字下移 */
+    top: 30% !important; /* 封面文字下移 */
     z-index: 2000; /* 提升层级，确保文字不被遮挡 */
   }
 
